@@ -8,15 +8,6 @@ h1 {
 font-family: fantasy;
 
 }
-div.gallery {
-   margin: 10px 10px;
-   
-}
-div.imgs {
-   float: top;
-
-}
-
 
 h3
 {
@@ -27,6 +18,25 @@ border:0px 10px;
 margin:0px 7px;
 
 }
+div.gallery {
+   margin: 10px 20px 10px;
+   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+   float: left;
+  width: auto
+  ;
+}
+div.imgs {
+   
+   width: 100%;
+   height: auto;
+}
+
+div.gallery:hover {
+   cursor: pointer;
+
+}
+
+
 header  { 
     margin: 0 ;
     background-color: rgba(0, 45, 97, 100);
