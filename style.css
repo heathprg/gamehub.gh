@@ -8,6 +8,16 @@ h1 {
 font-family: fantasy;
 
 }
+div.gallery {
+   margin: 10px 10px;
+   
+}
+div.imgs {
+   float: top;
+
+}
+
+
 h3
 {
 padding:0px 0px;
