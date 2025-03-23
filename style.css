@@ -1,6 +1,6 @@
 body {
     margin:0;
-    background-color: rgba(205, 204, 194, 0.482);
+    background-color: rgba(205, 199, 194, 0.482);
 }
 
 div.container {
@@ -19,11 +19,17 @@ border:0px 10px;
 
 margin:10px 20px;
 
+
+}
+
+.jpg{
+   border-radius: 5px;
 }
 
 div.gallery {
    margin: 1em ;
   width: 100%;
+  
   
 }
 
@@ -35,6 +41,9 @@ div.gallery:hover {
 
 }
 
+
+
+
 header  { 
     margin: 0 ;
     background-color: rgb(118, 49, 172);
@@ -42,7 +51,7 @@ header  {
     color: #ffffff;
     position: fixed;top: 0; left: 0; width: 100%; height: 30px;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     
  }
@@ -54,11 +63,23 @@ header  {
  footer {
     color: #ffffff;
     margin: 0;
-    background-color: rgba(0, 45, 97, 100);
-    padding: 20px;
-    font-family:Arial, Helvetica, sans-serif
+    background-color: rgb(118, 49, 172);
+    padding: 15px;
+    width: 100%;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   footer section {
     float: right;
   }
+  
+
+
+  
+  
+  
+  
+
+   
+
