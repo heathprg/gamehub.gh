@@ -1,115 +1,86 @@
-casa {
-   margin-top: 0;
-   margin-left: 10px;
-   
-   
-   
-}
-.what{
-margin-left: 5%;
-
-}
-.sw {
-   margin-top: 17px;
-   margin-left: 1em;
-}
-
 body {
-    margin-top: 6em;
-    background-color: rgba(205, 199, 194, 0.482);
-}
-
-div.container {
-   width: 100%;
-   height: auto;
-  }
-
-
-
-
-h3
-{
-  
-padding:0px 0px;
-
-border:0px 10px;
-
-margin:10px 20px;
-
-
-}
-
-.jpg{
-   border-radius: 5px;
-}
-
-div.gallery {
-   margin: 1em ;
-  width: 100%;
-  
-  
-}
-
-
-
-
-div.gallery:hover {
-   cursor: pointer;
-
-}
-
-
-
-
-header  { 
-    margin-top: 0;  
-    background-color: rgb(118, 49, 172);
-    padding: 0px;
-    color: #ffffff;
-    position: fixed;top: 0; left: 0; width: 100%; height: 60px;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    
- }
- header section {
-    float: left;
-
- }
-
- footer {
-    color: #ffffff;
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: rgb(118, 49, 172);
-    padding: 15px;
-    width: 100%;
-    
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+}
+
+.image-container {
+    position: relative; /* Establece un contenedor relativo para la imagen y el botón */
+    width: 100%; /* Ajusta el tamaño según tu preferencia */
+}
+
+img {
+    width: 100%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.button {
+    position: absolute; /* Coloca el botón sobre la imagen */
+    top: 63%; /* Posición vertical (centrado) */
+    left: 18%; /* Posición horizontal (centrado) */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta para centrar el botón */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #555; /* Cambia el color cuando el cursor pasa sobre el botón */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
   }
   
-  footer section {
-    float: right;
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
   }
   
-
-
+  .product-card img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+  }
   
+  .product-card h3 {
+    margin: 10px 0;
+    color: #333;
+  }
   
+  .product-card p {
+    margin: 5px 0;
+    color: #555;
+  }
   
+  .product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+  }
   
-
-   
-
+  .product-card .cta-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
   
-
-
-  
-  
-  
-  
-
-   
-
-
-   
-
+  .product-card .cta-button:hover {
+    background-color: #e64a19;
+  }
