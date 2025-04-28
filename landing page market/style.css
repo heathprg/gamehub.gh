@@ -49,17 +49,23 @@ body {
 .image-container {
   position: relative; /* Establece un contenedor relativo para la imagen y el botón */
   width: 100%; /* Ajusta el tamaño según tu preferencia */
+  max-height: 500px; /* Limita la altura del contenedor para mantener la proporción */
+  overflow: hidden; /* Evita que la imagen desborde el contenedor */
 }
 
 img {
-  width: 100%; /* Ajusta el tamaño de la imagen */
-  height: auto;
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene las proporciones */
+  max-height: 500px; /* Limita la altura para evitar que sea demasiado grande */
+  display: block; /* Elimina espacios causados por elementos inline */
+  margin: 0 auto; /* Centra la imagen dentro de su contenedor */
 }
+
 
 .button {
   position: absolute; /* Coloca el botón sobre la imagen */
-  top: 63%; /* Posición vertical (centrado) */
-  left: 18%; /* Posición horizontal (centrado) */
+  top: 62%; /* Posición vertical (centrado) */
+  left: 25%; /* Posición horizontal (centrado) */
   transform: translate(-50%, -50%); /* Ajusta la posición exacta para centrar el botón */
   padding: 10px 20px;
   background-color: #333;
