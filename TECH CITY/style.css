@@ -26,7 +26,6 @@ header {
 
 header nav {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -220,35 +219,32 @@ footer ul li a:hover {
 
 /* === MEDIA QUERIES PARA MÓVILES === */
 @media (max-width: 768px) {
-    /* Estructura del header */
+    header {
+        padding: 5px 10px;
+    }
+    
+    /* Mantener la navegación en una sola línea y reducir tamaños */
     header nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
-
-    /* Logo centrado y separado */
+    
     header .logo {
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
+        margin-right: 10px;
     }
-
-    /* Menú en columna, centrando cada enlace */
+    
     header nav ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 10px;
+        flex-direction: row;
+        overflow-x: auto; /* En caso de que no quepan todos los botones, permite scroll horizontal */
     }
     
     header nav ul li {
-        margin: 5px 0;
+        margin: 0 5px;
     }
     
     header nav ul li a {
-        display: block;
-        padding: 8px 0;
-        width: 100%;
-        text-align: center;
+        font-size: 14px;
+        padding: 5px 8px;
     }
 }
