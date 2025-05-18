@@ -8,45 +8,55 @@ body {
     color: #333;
 }
 
-.container { /* Podrías envolver secciones en un div con esta clase para centrarlas */
+/* Contenedor general */
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
 }
 
-/* Header y Navegación */
+/* === HEADER Y NAVEGACIÓN === */
 header {
     background-color: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    padding: 10px 20px;
+    border-bottom: 3px solid #0779e4;
 }
 
-header a {
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo a img {
+    height: 50px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-}
-
-header .logo {
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    float: right;
-    margin-top: 5px; /* Alinea verticalmente con el logo si es necesario */
-}
-
-header nav ul li {
-    display: inline;
-    padding: 0 20px 0 20px;
 }
 
 header nav ul li a:hover {
@@ -54,11 +64,11 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #555; /* Un poco más claro que el nav */
+    background-color: #555;
     color: #fff;
 }
 
@@ -86,7 +96,7 @@ header nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Productos Destacados */
+/* === PRODUCTOS DESTACADOS === */
 .productos-destacados {
     padding: 30px 0;
     text-align: center;
@@ -99,11 +109,11 @@ header nav ul li a:hover {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 0 20px; /* Añade un poco de padding a los lados del grid */
-    max-width: 1200px; /* Limita el ancho máximo del grid */
-    margin: 0 auto; /* Centra el grid */
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .producto-card {
@@ -116,7 +126,7 @@ header nav ul li a:hover {
 }
 
 .producto-card img {
-    max-width: 80%; /* Ajusta el tamaño de la imagen dentro de la tarjeta */
+    max-width: 80%;
     height: auto;
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -131,12 +141,12 @@ header nav ul li a:hover {
 .producto-card .precio {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007bff; /* Un color azul para el precio */
+    color: #007bff;
     margin-bottom: 10px;
 }
 
 .producto-card button {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -152,8 +162,7 @@ header nav ul li a:hover {
     background-color: #218838;
 }
 
-
-/* Llamada a la acción */
+/* === LLAMADA A LA ACCIÓN === */
 .llamada-accion {
     background-color: #333;
     color: #fff;
@@ -169,7 +178,7 @@ header nav ul li a:hover {
 
 .btn-secundario {
     display: inline-block;
-    background-color: #6c757d; /* Gris */
+    background-color: #6c757d;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -181,7 +190,7 @@ header nav ul li a:hover {
     background-color: #545b62;
 }
 
-/* Footer */
+/* === FOOTER === */
 footer {
     background-color: #222;
     color: #aaa;
@@ -207,4 +216,39 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #fff;
+}
+
+/* === MEDIA QUERIES PARA MÓVILES === */
+@media (max-width: 768px) {
+    /* Estructura del header */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Logo centrado y separado */
+    header .logo {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Menú en columna, centrando cada enlace */
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    header nav ul li {
+        margin: 5px 0;
+    }
+    
+    header nav ul li a {
+        display: block;
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
 }
