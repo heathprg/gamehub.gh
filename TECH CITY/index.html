@@ -3,60 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECH CITY</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="icon" href="favicon 2.png"> </head>
+    <title>Manba One V2 - TECH CITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon 2.png">
+</head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="favicon.png" alt=""></a>
+                <a href="/index.html"><img src="/favicon.png" alt=""></a>
             </div>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
+                <a href="index.html"><img src="favicon.png" alt=""></a>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html">Productos</a></li>
                 <li><a href="https://wa.me/qr/MKHI67WXDVL7F1">Contacta</a></li> 
-                
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Los Mejores Periféricos y Componentes para tu PC</h1>
-            <p>Calidad y tecnología a tu alcance.</p>
-            <a href="productos.html" class="btn-principal">Ver Productos</a>
-        </div>
     </header>
 
-    <main>
-        <section class="productos-destacados">
-            <h2>Productos Destacados</h2>
-            <div class="grid-productos">
-                <article class="producto-card">
-                    <a href="producto/manba one/index.html"><img src="producto manba.png" alt="Nombre del Producto 1"></a>
-                    <h3>Manba One V2</h3>
-                    <p class="precio">$90.00</p>
-                    <button>Ver Detalles</button>
-                </article>
-
-                <article class="producto-card">
-                    <img src="producto g203.png" alt="Nombre del Producto 2">
-                    <h3>Logitech G203 Lightsync</h3>
-                    <p class="precio">$48.00</p>
-                    <button>Ver Detalles</button>
-                </article>
-
-                <article class="producto-card">
-                    <img src="producto crucial.png" alt="Nombre del Producto 3">
-                    <h3>SSD Crucial</h3>
-                    <p class="precio">$50.00</p>
-                    <button>Ver Detalles</button>
-                </article>
+    <main class="pagina-producto">
+        <section class="detalles-producto">
+            <div class="imagen-producto">
+                <img src="producto manba.png" alt="Manba One V2">
+            </div>
+            <div class="info-producto">
+                <h1>Manba One V2</h1>
+                <p class="precio">$90.00</p>
+                <p class="descripcion">
+                    El Manba One V2 es un mando Pro de alto rendimiento diseñado para ofrecer la mejor precisión y personalización. 
+                    Compatible con PC, Nintendo Switch y teléfonos móviles. 
+                    Botones programables y conectividad inalámbrica a través del receptor o Bluetooth. ¡Domina tus juegos con el Manba One V2!
+                </p>
+                <div class="detalles">
+                    <h2>Características Principales</h2>
+                    <ul>
+                        <li>Personalización increíble a través de su pantalla integrada</li>
+                        <li>Botones mecánicos, palancas y gatillos Hall Effect</li>
+                        <li>4 botones adicionales en la parte trasera para asignar macros</li>
+                        <li>Iluminación RGB personalizable</li>
+                        <li>Gatillos con recorrido adaptable para juegos competitivos o casuales</li>
+                        <li>12-14 horas de duración de batería y base de carga incluida</li>
+                    </ul>
+                    <a href="https://wa.me/qr/MKHI67WXDVL7F1"><button class="btn-principal">Comprar ahora!</button></a>
+                </div>
             </div>
         </section>
 
-        <section class="llamada-accion">
-            <h2>¿Buscas algo específico?</h2>
-            <p>Explora nuestro catálogo completo o contáctanos.</p>
-            <a href="https://wa.me/qr/MKHI67WXDVL7F1" class="btn-secundario">Contactar</a>
+        <section class="productos-relacionados">
+            <h2>Productos Relacionados</h2>
+            <div class="grid-productos">
+                <article class="producto-card">
+                    <img src="/producto g203.png" alt="Logitech G203 Lightsync">
+                    <h3>Logitech G203 Lightsync</h3>
+                    <p class="precio">$48.00</p>
+                    <a href="logitech-g203.html"><button>Ver Detalles</button></a>
+                </article>
+
+                <article class="producto-card">
+                    <img src="/producto crucial.png" alt="SSD Crucial">
+                    <h3>SSD Crucial</h3>
+                    <p class="precio">$50.00</p>
+                    <a href="ssd-crucial.html"><button>Ver Detalles</button></a>
+                </article>
+            </div>
         </section>
     </main>
 
