@@ -8,16 +8,15 @@ body {
     color: #333;
 }
 
-.container { /* Podrías envolver secciones en un div con esta clase para centrarlas */
+/* Contenedor general */
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
 }
 
-/* ===============================
-   HEADER Y NAVEGACIÓN (MODIFICADO)
-   =============================== */
+/* === HEADER Y NAVEGACIÓN === */
 header {
     background-color: #333;
     color: #fff;
@@ -34,18 +33,11 @@ header nav {
 header .logo {
     display: flex;
     align-items: center;
-    /* Elimina cualquier float previo */
-    float: none;
 }
 
 header .logo a img {
     height: 50px;
     width: auto;
-}
-
-/* Oculta el enlace extra que se insertó dentro del ul */
-header nav ul > a {
-    display: none;
 }
 
 header nav ul {
@@ -71,45 +63,11 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-/* ===============================
-   MEDIA QUERIES PARA MÓVILES (Header)
-   =============================== */
-@media (max-width: 768px) {
-    header {
-        padding: 5px 10px;
-    }
-    
-    header nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    header .logo {
-        margin-right: 10px;
-    }
-    
-    header nav ul {
-        flex-direction: row;
-        overflow-x: auto;
-    }
-    
-    header nav ul li {
-        margin: 0 5px;
-    }
-    
-    header nav ul li a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
-}
-
-
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #555; /* Un poco más claro que el nav */
+    background-color: #555;
     color: #fff;
 }
 
@@ -137,7 +95,7 @@ header nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Productos Destacados */
+/* === PRODUCTOS DESTACADOS === */
 .productos-destacados {
     padding: 30px 0;
     text-align: center;
@@ -150,11 +108,11 @@ header nav ul li a:hover {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 0 20px; /* Añade un poco de padding a los lados del grid */
-    max-width: 1200px; /* Limita el ancho máximo del grid */
-    margin: 0 auto; /* Centra el grid */
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .producto-card {
@@ -167,7 +125,7 @@ header nav ul li a:hover {
 }
 
 .producto-card img {
-    max-width: 80%; /* Ajusta el tamaño de la imagen dentro de la tarjeta */
+    max-width: 80%;
     height: auto;
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -182,12 +140,12 @@ header nav ul li a:hover {
 .producto-card .precio {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007bff; /* Un color azul para el precio */
+    color: #007bff;
     margin-bottom: 10px;
 }
 
 .producto-card button {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -203,8 +161,7 @@ header nav ul li a:hover {
     background-color: #218838;
 }
 
-
-/* Llamada a la acción */
+/* === LLAMADA A LA ACCIÓN === */
 .llamada-accion {
     background-color: #333;
     color: #fff;
@@ -220,7 +177,7 @@ header nav ul li a:hover {
 
 .btn-secundario {
     display: inline-block;
-    background-color: #6c757d; /* Gris */
+    background-color: #6c757d;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -232,7 +189,7 @@ header nav ul li a:hover {
     background-color: #545b62;
 }
 
-/* Footer */
+/* === FOOTER === */
 footer {
     background-color: #222;
     color: #aaa;
@@ -260,179 +217,34 @@ footer ul li a:hover {
     color: #fff;
 }
 
-/* Estilos para la página de producto individual */
-.pagina-producto {
-    padding: 20px;
-    background-color: #f4f4f4; /* Manteniendo el fondo */
-}
-
-.detalles-producto {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 40px;
-    background-color: #fff; /* Fondo para la sección de detalles */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.imagen-producto {
-    flex-basis: 40%;
-}
-
-.imagen-producto img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.info-producto {
-    flex-basis: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Alinea el contenido al inicio */
-}
-
-.info-producto h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.info-producto .precio {
-    font-size: 1.8em;
-    color: #007bff; /* Usando tu color azul */
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.info-producto .descripcion {
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.info-producto .detalles h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #333;
-    border-bottom: 2px solid #ddd; /* Un borde más claro */
-    padding-bottom: 5px;
-}
-
-.info-producto .detalles ul {
-    list-style: disc;
-    margin-left: 20px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.info-producto .detalles button.btn-principal {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #28a745; /* Usando tu color verde para el botón principal */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.info-producto .detalles button.btn-principal:hover {
-    background-color: #218838; /* Oscureciendo al pasar el ratón */
-}
-
-/* Estilos para la sección de productos relacionados (opcional) */
-.productos-relacionados {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd; /* Borde más claro */
-    text-align: center; /* Centrando el título */
-}
-
-.productos-relacionados h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.productos-relacionados .grid-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.productos-relacionados .producto-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.productos-relacionados .producto-card img {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
-
-.productos-relacionados .producto-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.productos-relacionados .producto-card .precio {
-    font-size: 1em;
-    font-weight: bold;
-    color: #007bff; /* Usando tu color azul */
-    margin-bottom: 10px;
-}
-
-.productos-relacionados .producto-card a {
-    text-decoration: none; /* Para quitar el subrayado del enlace */
-}
-
-.productos-relacionados .producto-card button {
-    background-color: #f8f9fa; /* Un gris claro */
-    color: #333;
-    border: none;
-    padding: 10px 15px;
-    text-align: center;
-    display: block;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%; /* Para que el botón ocupe todo el ancho */
-    border-top: 1px solid #eee; /* Separación visual */
-}
-
-.productos-relacionados .producto-card button:hover {
-    background-color: #e9ecef; /* Un gris un poco más oscuro al pasar el ratón */
-}
-
-/* Adaptaciones para pantallas más pequeñas (opcional) */
+/* === MEDIA QUERIES PARA MÓVILES === */
 @media (max-width: 768px) {
-    .detalles-producto {
-        flex-direction: column;
+    header {
+        padding: 5px 10px;
     }
-
-    .imagen-producto {
-        flex-basis: 100%;
-        margin-bottom: 20px;
+    
+    /* Mantener la navegación en una sola línea y reducir tamaños */
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-
-    .info-producto {
-        flex-basis: 100%;
+    
+    header .logo {
+        margin-right: 10px;
+    }
+    
+    header nav ul {
+        flex-direction: row;
+        overflow-x: auto; /* En caso de que no quepan todos los botones, permite scroll horizontal */
+    }
+    
+    header nav ul li {
+        margin: 0 5px;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
     }
 }
