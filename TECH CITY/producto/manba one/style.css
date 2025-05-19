@@ -15,44 +15,95 @@ body {
     padding: 0 20px;
 }
 
-/* Header y Navegación */
+/* ===============================
+   HEADER Y NAVEGACIÓN (MODIFICADO)
+   =============================== */
 header {
     background-color: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    padding: 10px 20px;
+    border-bottom: 3px solid #0779e4;
 }
 
-header a {
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    /* Elimina cualquier float previo */
+    float: none;
+}
+
+header .logo a img {
+    height: 50px;
+    width: auto;
+}
+
+/* Oculta el enlace extra que se insertó dentro del ul */
+header nav ul > a {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-header .logo {
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-    float: right;
-    margin-top: 5px; /* Alinea verticalmente con el logo si es necesario */
-}
-
-header nav ul li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
 header nav ul li a:hover {
     color: #0779e4;
     font-weight: bold;
 }
+
+/* ===============================
+   MEDIA QUERIES PARA MÓVILES (Header)
+   =============================== */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 10px;
+    }
+    
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .logo {
+        margin-right: 10px;
+    }
+    
+    header nav ul {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    
+    header nav ul li {
+        margin: 0 5px;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+
 
 /* Hero Section */
 .hero {
