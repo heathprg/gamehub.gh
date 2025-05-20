@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manba One V2 - TECH CITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/index.html"><img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png" alt=""></a>
+            </div>
+            <ul>
+                <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/index.html"><img src="favicon.png" alt=""></a>
+                <li><a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/index.html">Inicio</a></li>
+                <li><a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/index.html">Productos</a></li>
+                <li><a href="https://wa.me/qr/MKHI67WXDVL7F1">Contacta</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-producto">
+        <section class="detalles-producto">
+            <div class="imagen-producto">
+                <img src="producto.png" alt="Manba One V2">
+            </div>
+            <div class="info-producto">
+                <h1>SSD Crucial BX500</h1>
+                <script>
+        function marcarSeleccion() {
+            let radios = document.querySelectorAll('input[name="ssd"]');
+            let urlActual = window.location.pathname; 
+
+            radios.forEach(radio => {
+                if (urlActual.includes(radio.value)) {
+                    radio.checked = true; 
+                }
+            });
+        }
+
+        function redirigir(event) {
+            window.location.href = event.target.value;
+        }
+
+        window.onload = marcarSeleccion;
+    </script>
+    <label><input type="radio" name="ssd" value="ssd-240gb.html" onchange="redirigir(event)"> 240 GB</label><br>
+    <label><input type="radio" name="ssd" value="ssd-500gb.html" onchange="redirigir(event)"> 500 GB</label><br>
+    <label><input type="radio" name="ssd" value="ssd-1tb.html" onchange="redirigir(event)"> 1 TB</label><br>
+    
+    
+                <p class="precio">$35.00</p>
+                <p class="descripcion">
+                    El Crucial BX500 es un SSD SATA III de 2.5", diseñado para mejorar la velocidad de sistemas antiguos. 
+                    Ofrece hasta 540 MB/s de lectura y 500 MB/s de escritura, siendo una opción económica para almacenamiento rápido
+                <div class="detalles">
+                    <h2>Características Principales</h2>
+                    <ul>
+                        <li>Arranca más rápido. Cargue archivos más rápido. Mejorar la capacidad de respuesta general del sistema</li>
+                        <li>300% más rápido que un disco duro típico</li>
+                        <li>Mejora la duración de la batería porque es 45 veces más eficiente que un disco duro típico</li>
+                        <li>Micron 3D NAND - avanzando en la tecnología mundial de memoria y almacenamiento durante 40 años</li>
+                        
+                        
+                    </ul>
+                    <a href="https://wa.me/qr/MKHI67WXDVL7F1"><button class="btn-principal">Comprar ahora!</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-relacionados">
+            <h2>Productos Relacionados</h2>
+            <div class="grid-productos">
+                <article class="producto-card">
+                    <img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto g203.png" alt="Logitech G203 Lightsync">
+                    <h3>Logitech G203 Lightsync</h3>
+                    <p class="precio">$48.00</p>
+                    <a href="logitech-g203.html"><button>Ver Detalles</button></a>
+                </article>
+
+                <article class="producto-card">
+                    <img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto crucial.png" alt="SSD Crucial">
+                    <h3>SSD Crucial</h3>
+                    <p class="precio">$50.00</p>
+                    <a href="ssd-crucial.html"><button>Ver Detalles</button></a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
