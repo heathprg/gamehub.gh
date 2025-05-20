@@ -8,16 +8,14 @@ body {
     color: #333;
 }
 
-.container { /* Podrías envolver secciones en un div con esta clase para centrarlas */
+.container { 
     width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
 }
 
-/* ===============================
-   HEADER Y NAVEGACIÓN (MODIFICADO)
-   =============================== */
+
 header {
     background-color: #333;
     color: #fff;
@@ -34,7 +32,7 @@ header nav {
 header .logo {
     display: flex;
     align-items: center;
-    /* Elimina cualquier float previo */
+    
     float: none;
 }
 
@@ -43,7 +41,7 @@ header .logo a img {
     width: auto;
 }
 
-/* Oculta el enlace extra que se insertó dentro del ul */
+
 header nav ul > a {
     display: none;
 }
@@ -72,7 +70,7 @@ header nav ul li a:hover {
 }
 
 /* ===============================
-   MEDIA QUERIES PARA MÓVILES (Header)
+   MEDIA QUERIES PARA MÓVILES 
    =============================== */
 @media (max-width: 768px) {
     header {
@@ -105,11 +103,11 @@ header nav ul li a:hover {
 }
 
 
-/* Hero Section */
+
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #555; /* Un poco más claro que el nav */
+    background-color: #555; 
     color: #fff;
 }
 
@@ -150,11 +148,11 @@ header nav ul li a:hover {
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
-    padding: 0 20px; /* Añade un poco de padding a los lados del grid */
-    max-width: 1200px; /* Limita el ancho máximo del grid */
-    margin: 0 auto; /* Centra el grid */
+    padding: 0 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .producto-card {
@@ -167,7 +165,7 @@ header nav ul li a:hover {
 }
 
 .producto-card img {
-    max-width: 80%; /* Ajusta el tamaño de la imagen dentro de la tarjeta */
+    max-width: 80%; 
     height: auto;
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -182,12 +180,12 @@ header nav ul li a:hover {
 .producto-card .precio {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007bff; /* Un color azul para el precio */
+    color: #007bff; 
     margin-bottom: 10px;
 }
 
 .producto-card button {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -204,7 +202,7 @@ header nav ul li a:hover {
 }
 
 
-/* Llamada a la acción */
+
 .llamada-accion {
     background-color: #333;
     color: #fff;
@@ -220,7 +218,7 @@ header nav ul li a:hover {
 
 .btn-secundario {
     display: inline-block;
-    background-color: #6c757d; /* Gris */
+    background-color: #6c757d; 
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -232,7 +230,7 @@ header nav ul li a:hover {
     background-color: #545b62;
 }
 
-/* Footer */
+
 footer {
     background-color: #222;
     color: #aaa;
@@ -260,17 +258,17 @@ footer ul li a:hover {
     color: #fff;
 }
 
-/* Estilos para la página de producto individual */
+
 .pagina-producto {
     padding: 20px;
-    background-color: #f4f4f4; /* Manteniendo el fondo */
+    background-color: #f4f4f4; 
 }
 
 .detalles-producto {
     display: flex;
     gap: 30px;
     margin-bottom: 40px;
-    background-color: #fff; /* Fondo para la sección de detalles */
+    background-color: #fff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -292,7 +290,7 @@ footer ul li a:hover {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea el contenido al inicio */
+    justify-content: flex-start; 
 }
 
 .info-producto h1 {
@@ -303,7 +301,7 @@ footer ul li a:hover {
 
 .info-producto .precio {
     font-size: 1.8em;
-    color: #007bff; /* Usando tu color azul */
+    color: #007bff; 
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -319,7 +317,7 @@ footer ul li a:hover {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #333;
-    border-bottom: 2px solid #ddd; /* Un borde más claro */
+    border-bottom: 2px solid #ddd; 
     padding-bottom: 5px;
 }
 
@@ -334,7 +332,7 @@ footer ul li a:hover {
 .info-producto .detalles button.btn-principal {
     padding: 12px 25px;
     font-size: 1em;
-    background-color: #28a745; /* Usando tu color verde para el botón principal */
+    background-color: #28a745; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -343,15 +341,15 @@ footer ul li a:hover {
 }
 
 .info-producto .detalles button.btn-principal:hover {
-    background-color: #218838; /* Oscureciendo al pasar el ratón */
+    background-color: #218838; 
 }
 
-/* Estilos para la sección de productos relacionados (opcional) */
+
 .productos-relacionados {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #ddd; /* Borde más claro */
-    text-align: center; /* Centrando el título */
+    border-top: 1px solid #ddd; 
+    text-align: center; 
 }
 
 .productos-relacionados h2 {
@@ -362,7 +360,7 @@ footer ul li a:hover {
 
 .productos-relacionados .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 0 20px;
     max-width: 1200px;
@@ -395,16 +393,16 @@ footer ul li a:hover {
 .productos-relacionados .producto-card .precio {
     font-size: 1em;
     font-weight: bold;
-    color: #007bff; /* Usando tu color azul */
+    color: #007bff; 
     margin-bottom: 10px;
 }
 
 .productos-relacionados .producto-card a {
-    text-decoration: none; /* Para quitar el subrayado del enlace */
+    text-decoration: none; 
 }
 
 .productos-relacionados .producto-card button {
-    background-color: #f8f9fa; /* Un gris claro */
+    background-color: #f8f9fa; 
     color: #333;
     border: none;
     padding: 10px 15px;
@@ -413,15 +411,15 @@ footer ul li a:hover {
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%; /* Para que el botón ocupe todo el ancho */
-    border-top: 1px solid #eee; /* Separación visual */
+    width: 100%; 
+    border-top: 1px solid #eee; 
 }
 
 .productos-relacionados .producto-card button:hover {
-    background-color: #e9ecef; /* Un gris un poco más oscuro al pasar el ratón */
+    background-color: #e9ecef; 
 }
 
-/* Adaptaciones para pantallas más pequeñas (opcional) */
+/* Adaptacion */
 @media (max-width: 768px) {
     .detalles-producto {
         flex-direction: column;
