@@ -1,4 +1,4 @@
-/* Reseteo básico y fuentes */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Contenedor general */
+
 .container {
     width: 80%;
     margin: auto;
@@ -16,7 +16,7 @@ body {
     padding: 0 20px;
 }
 
-/* === HEADER Y NAVEGACIÓN === */
+
 header {
     background-color: #333;
     color: #fff;
@@ -63,7 +63,7 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-/* === HERO SECTION === */
+
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -95,7 +95,7 @@ header nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* === PRODUCTOS DESTACADOS === */
+
 .productos-destacados {
     padding: 30px 0;
     text-align: center;
@@ -161,7 +161,7 @@ header nav ul li a:hover {
     background-color: #218838;
 }
 
-/* === LLAMADA A LA ACCIÓN === */
+
 .llamada-accion {
     background-color: #333;
     color: #fff;
@@ -189,7 +189,7 @@ header nav ul li a:hover {
     background-color: #545b62;
 }
 
-/* === FOOTER === */
+
 footer {
     background-color: #222;
     color: #aaa;
@@ -223,7 +223,7 @@ footer ul li a:hover {
         padding: 5px 10px;
     }
     
-    /* Mantener la navegación en una sola línea y reducir tamaños */
+    
     header nav {
         flex-direction: row;
         align-items: center;
