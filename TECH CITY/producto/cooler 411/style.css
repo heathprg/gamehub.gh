@@ -434,3 +434,20 @@ footer ul li a:hover {
         flex-basis: 100%;
     }
 }
+
+.btn-descarga {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-descarga:hover {
+    background-color: #0056b3;
+}
