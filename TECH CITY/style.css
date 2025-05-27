@@ -21,7 +21,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-    border-bottom: 3px solid #0779e4;
+    border-bottom: 3px solid #b55d05;
 }
 
 header nav {
@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 .btn-principal {
     display: inline-block;
-    background-color: #0779e4;
+    background-color: #d5640e;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -92,7 +92,7 @@ header nav ul li a:hover {
 }
 
 .btn-principal:hover {
-    background-color: #0056b3;
+    background-color:#7a3e10;
 }
 
 
@@ -140,12 +140,12 @@ header nav ul li a:hover {
 .producto-card .precio {
     font-size: 1.1em;
     font-weight: bold;
-    color: #007bff;
+    color: #0c131a;
     margin-bottom: 10px;
 }
 
 .producto-card button {
-    background-color: #28a745;
+    background-color: #cb2c2c;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -158,7 +158,7 @@ header nav ul li a:hover {
 }
 
 .producto-card button:hover {
-    background-color: #218838;
+    background-color: #8e1c1c;
 }
 
 
@@ -247,4 +247,13 @@ footer ul li a:hover {
         font-size: 14px;
         padding: 5px 8px;
     }
+}
+
+.precio-antiguo {
+    color: gray;
+}
+
+.precio-nuevo {
+    color: red;
+    font-weight: bold;
 }
