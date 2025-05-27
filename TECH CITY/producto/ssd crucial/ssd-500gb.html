@@ -48,9 +48,15 @@
 
         window.onload = marcarSeleccion;
     </script>
-    <label><input type="radio" name="ssd" value="ssd-240gb.html" onchange="redirigir(event)"> 240 GB</label><br>
-    <label><input type="radio" name="ssd" value="ssd-500gb.html" onchange="redirigir(event)"> 500 GB</label><br>
-    <label><input type="radio" name="ssd" value="ssd-1tb.html" onchange="redirigir(event)"> 1 TB</label><br>
+    <label class="radio-label">
+    <input type="radio" name="ssd" value="ssd-240gb.html" onchange="redirigir(event)"> 240 GB
+</label><br>
+<label class="radio-label">
+    <input type="radio" name="ssd" value="ssd-500gb.html" onchange="redirigir(event)"> 500 GB
+</label><br>
+<label class="radio-label">
+    <input type="radio" name="ssd" value="ssd-1tb.html" onchange="redirigir(event)"> 1 TB
+</label><br>
     
     
                 <p class="precio">$50.00</p>
@@ -76,16 +82,21 @@
             <h2>Productos Relacionados</h2>
             <div class="grid-productos">
                 <article class="producto-card">
-                    <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20g203/index.html"><img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto g203.png" alt="Logitech G203 Lightsync"></a>
+                    <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20g203/index.html">
+                        <img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto g203.png" alt="Logitech G203 Lightsync"></a>
                     <h3>Logitech G203 Lightsync</h3>
-                    <p class="precio">$46.00</p>
-                    <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20g203/index.html"><button>Ver Detalles</button></a>
+                    <p>Precio sin oferta<s class="precio-antiguo"> $46.00</s><br>Ahora
+                <strong class="precio-nuevo">$36.00</strong>
+                </p>
+                    <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20g203/index.html"><button>Oferta breve</button></a>
                 </article>
 
                 <article class="producto-card">
                     <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/manba%20one/index.html"><img src="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto manba.png" alt="Logitech G203 Lightsync"></a>
                     <h3>Manba One v2 Controller</h3>
-                    <p class="precio">$90.00</p>
+                    <p>Precio sin oferta<s class="precio-antiguo"> $46.00</s><br>Ahora
+                        <strong class="precio-nuevo">$42.00</strong>
+                </p>
                     <a href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/manba%20one/index.html"><button>Ver Detalles</button></a>
                 </article>
             </div>

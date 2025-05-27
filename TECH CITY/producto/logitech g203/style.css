@@ -20,7 +20,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-    border-bottom: 3px solid #0779e4;
+    border-bottom: 3px solid #b55d05;
 }
 
 header nav {
@@ -332,7 +332,7 @@ footer ul li a:hover {
 .info-producto .detalles button.btn-principal {
     padding: 12px 25px;
     font-size: 1em;
-    background-color: #28a745; 
+    background-color: #cb2c2c;
     color: white;
     border: none;
     border-radius: 4px;
@@ -341,7 +341,7 @@ footer ul li a:hover {
 }
 
 .info-producto .detalles button.btn-principal:hover {
-    background-color: #218838; 
+    background-color: #8a1c1c;
 }
 
 
@@ -434,11 +434,12 @@ footer ul li a:hover {
         flex-basis: 100%;
     }
 }
+
 .btn-descarga {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #d5640e;
     color: white;
     border: none;
     cursor: pointer;
@@ -448,5 +449,18 @@ footer ul li a:hover {
 }
 
 .btn-descarga:hover {
-    background-color: #0056b3;
+    background-color:#7a3e10;
+}
+
+.precio-antiguo {
+    color: gray;
+    font-size: 1.1em;
+    
+}
+
+.precio-nuevo {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+
 }
