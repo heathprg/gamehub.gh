@@ -294,14 +294,14 @@ footer ul li a:hover {
 }
 
 .info-producto h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     color: #333;
 }
 
 .info-producto .precio {
     font-size: 1.8em;
-    color: #000000; 
+    color: #007bff; 
     margin-bottom: 20px;
     font-weight: bold;
 }
