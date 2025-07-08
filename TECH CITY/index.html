@@ -20,15 +20,15 @@
             </ul>
         </nav>
         <div class="hero">
-            <h1>La Oferta de Verano ya está aquí!</h1>
+            <h1>Oferta Flash!!</h1>
             <p>
-  Solo por 48 horas!!! 
+  Solo por 24 horas!!!
   <span id="countdown"></span>
 </p>
 
 <script>
-// Fecha final (24 horas desde ahora)
-const endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+// Establecer la fecha y hora de finalización: 9 de julio a las 12:00 p.m.
+const endTime = new Date("July 9, 2025 12:00:00 GMT-0400").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -43,7 +43,7 @@ function updateCountdown() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown").innerHTML = 
+  document.getElementById("countdown").innerHTML =
     ` | Termina en: ${hours.toString().padStart(2, '0')}:${minutes
       .toString()
       .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
@@ -52,6 +52,7 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 </script>
+
             <a href="#go to" class="btn-principal">Ver Oferta!</a>
         </div>
     </header>
