@@ -301,7 +301,7 @@ footer ul li a:hover {
 
 .info-producto .precio {
     font-size: 1.8em;
-    color: #6a6a6a; 
+    color: #000000; 
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -463,21 +463,4 @@ footer ul li a:hover {
     font-weight: bold;
     font-size: 1.2em;
 
-}
-
- .descuento{
-    background-color: #d0021b;        /* Rojo intenso estilo Amazon */
-    color: white;                     /* Texto blanco */
-    border: none;                     /* Sin bordes */
-    padding: 12px 15px;               /* Espaciado cómodo */
-    font-size: 11px;                  /* Tamaño legible */
-    font-weight: bold;                /* Texto en negrita */
-    border-radius: 10px;               /* Bordes ligeramente redondeados */
-    cursor: pointer;                  /* Cursor estilo puntero */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra sutil para resalte */
-    transition: background-color 0.3s ease;
-}
-
-.descuento:hover {
-    background-color: #a50115;        /* Rojo más oscuro al pasar el mouse */
 }
