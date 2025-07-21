@@ -18,7 +18,8 @@ body {
 
 
 header {
-    background-image: url('fondo.jpg'); /* Reemplaza con tu imagen */
+    /* background-image: url('fondo.jpg');  */
+    background-color: #0c131a;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,8 +103,9 @@ header nav ul li a:hover {
 
 
 .productos-destacados {
-    padding: 30px 0;
+    padding: 0px 0;
     text-align: center;
+    
 }
 
 .productos-destacados h2 {
@@ -261,4 +263,9 @@ footer ul li a:hover {
 .precio-nuevo {
     color: red;
     font-weight: bold;
+}
+
+.fondo {
+    max-width: 100%;
+    height: auto;
 }
