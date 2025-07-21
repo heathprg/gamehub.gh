@@ -275,7 +275,7 @@ footer ul li a:hover {
   display: none;
 }
 
-/* Mostrar .fondo-movil solo en dispositivos móviles */
+
 @media (max-width: 768px) {
   .fondo {
     display: none;
@@ -287,3 +287,6 @@ footer ul li a:hover {
     height: auto;
   }
 }
+  .fondo:hover {
+    cursor: pointer;
+  }
