@@ -266,6 +266,24 @@ footer ul li a:hover {
 }
 
 .fondo {
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.fondo-movil {
+  display: none;
+}
+
+/* Mostrar .fondo-movil solo en dispositivos móviles */
+@media (max-width: 768px) {
+  .fondo {
+    display: none;
+  }
+
+  .fondo-movil {
+    display: block;
+    width: 100%;
     height: auto;
+  }
 }
