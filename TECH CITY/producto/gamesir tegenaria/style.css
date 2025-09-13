@@ -464,3 +464,16 @@ footer ul li a:hover {
     font-size: 1.2em;
 
 }
+
+.new-tag {
+    background-color: rgb(255, 8, 0);
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
