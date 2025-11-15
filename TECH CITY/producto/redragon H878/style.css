@@ -477,3 +477,29 @@ footer ul li a:hover {
     border: none;
     
 }
+
+.stock-tag {
+    background-color: rgb(255, 153, 0);
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
+
+.porc-tag {
+    background-color: rgb(223, 18, 18);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
