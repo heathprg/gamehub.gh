@@ -293,3 +293,15 @@ footer ul li a:hover {
     cursor: pointer;
   }
 
+  .base-tag {
+    
+    color: rgb(83, 81, 81);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    
+    border: none;
+    
+}
