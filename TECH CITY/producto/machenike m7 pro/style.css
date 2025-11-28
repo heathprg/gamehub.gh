@@ -402,8 +402,8 @@ footer ul li a:hover {
 }
 
 .productos-relacionados .producto-card button {
-    background-color: #293541; 
-    color: #ffffff;
+    background-color: #f8f9fa; 
+    color: #333;
     border: none;
     padding: 10px 15px;
     text-align: center;
@@ -478,3 +478,68 @@ footer ul li a:hover {
     
 }
 
+.stock-tag {
+    background-color: rgb(255, 153, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
+
+.porc-tag {
+    background-color: rgb(223, 18, 18);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
+
+.friday-tag {
+    background-color: rgb(53, 50, 50);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
+
+.base-tag {
+    
+    color: rgb(83, 81, 81);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    
+    border: none;
+    
+}
+
+.mvp-tag {
+    
+     background-color: rgb(58, 149, 228);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
