@@ -503,3 +503,16 @@ footer ul li a:hover {
     border: none;
     
 }
+
+.friday-tag {
+    background-color: rgb(53, 50, 50);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
+    
+}
