@@ -479,8 +479,8 @@ footer ul li a:hover {
 }
 
 .rec-tag {
-    background-color: rgb(60, 255, 0);
-    color: black;
+    background-color: rgb(212, 0, 255);
+   color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-top: 5px;
     padding-left: 5px;
@@ -489,4 +489,17 @@ footer ul li a:hover {
     font-size: 0.6em;
     border: none;
     
+}
+
+.low-tag {
+    
+    background-color: rgb(22, 184, 130);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: 0.6em;
+    border: none;
 }
