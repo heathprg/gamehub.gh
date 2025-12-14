@@ -68,6 +68,17 @@
 
     <p class="price">$72 USD</p>
     <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+  const phone = "56135231"; // tu número de WhatsApp
+  const productTitle = document.title; // toma el <title> de la página
+  const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  // Selecciona el botón y agrega el evento de clic
+  document.querySelector(".add-to-cart").addEventListener("click", function() {
+    window.open(url, "_blank"); // abre WhatsApp en una nueva pestaña
+  });
+</script>
 
     <div class="tabs">
   <button class="tab active" data-tab="caracteristicas">Características</button>

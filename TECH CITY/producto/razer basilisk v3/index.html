@@ -70,6 +70,17 @@
 
     <p class="price">$80 USD</p>
     <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+  const phone = "56135231"; 
+  const productTitle = document.title; 
+  const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  
+  document.querySelector(".add-to-cart").addEventListener("click", function() {
+    window.open(url, "_blank"); 
+  });
+</script>
 
     <div class="tabs">
   <button class="tab active" data-tab="caracteristicas">Características</button>

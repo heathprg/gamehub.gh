@@ -58,7 +58,7 @@
   <div class="product-info">
     <h2 class="product-title">GameSir Cyclone 2</h2>
     <p class="product-description">
-      El aclamado Cyclone 2, ya disponible en Tech City. Equipado con las mejores tecnologías del momento, joysticks TMR (Mejor q Hall Effect) y botones de micro-switches (los mandos tradicionales tienen botones de membrana)
+      El aclamado Cyclone 2, ya disponible en Tech City. Equipado con las mejores tecnologías del momento, joysticks TMR (Mejor que Hall Effect) y botones de micro-switches (los mandos tradicionales tienen botones de membrana)
     </p>
 
     <label for="color-select">Color:</label>
@@ -70,6 +70,17 @@
 
     <p class="price">$80 USD</p>
     <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+  const phone = "56135231"; 
+  const productTitle = document.title; 
+  const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  
+  document.querySelector(".add-to-cart").addEventListener("click", function() {
+    window.open(url, "_blank"); 
+  });
+</script>
 
     <div class="tabs">
   <button class="tab active" data-tab="caracteristicas">Características</button>
