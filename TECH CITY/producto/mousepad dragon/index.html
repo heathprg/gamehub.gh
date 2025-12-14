@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siski Dragon - TECH CITY</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+    <meta property="og:title" content="GameSir Nova 2 Lite - TECH CITY" />
+<meta property="og:description" content="GameSir Nova 2 Lite, Joytick Hall Effect & Gatillos Hall, 2.4G & Cableado 1000Hz Polling Rate, Botones Remapeables - Compatible con PC/Switch/Steam/Android Color: Gris / Blanco" />
+<meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto%20m7%20pro.jpg" />
+<meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/machenike%20m7%20pro/index.html" />
+</head>
+<body>
+    
+
+    <header>
+         <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+  <li>
+    <a href="https://www.instagram.com/techcity.cuba/">
+      <img src="../../cards/isnta 2.png" alt="Instagram">
+    </a>
+  </li>
+  <li>
+    <a href="https://wa.me/qr/MKHI67WXDVL7F1">
+      <img src="../../cards/whatsapp.png" alt="WhatsApp">
+    </a>
+  </li>
+  <li>
+    <a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt">
+      <img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp">
+    </a>
+  </li>
+</ul>
+
+        </nav>
+    </header>
+
+   <!-- PRODUCT SECTION -->
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="Producto principal" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+      <img src="producto 2.webp" alt="Vista 2" class="thumb">
+      <img src="producto 3.webp" alt="Vista 3" class="thumb">
+      <img src="producto 4.webp" alt="Vista 4" class="thumb">
+      <img src="producto 5.webp" alt="Vista 5" class="thumb">
+      <img src="producto 6.webp" alt="Vista 6" class="thumb">
+      <img src="producto 7.webp" alt="Vista 7" class="thumb">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">Mousepad Siski Dragon</h2>
+    <p class="product-description">
+    "Arte japonés, rendimiento gamer: el Siski Dragon transforma tu escritorio en territorio épico."
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+     
+    </select>
+
+    <p class="price">$29 USD</p>
+    <button class="add-to-cart">COMPRAR AHORA</button>
+
+    <div class="tabs">
+  <button class="tab active" data-tab="caracteristicas">Características</button>
+  <button class="tab" data-tab="especificaciones">Especificaciones</button>
+  <button class="tab" data-tab="promociones">Extra</button>
+</div>
+
+<div class="tab-content" id="caracteristicas">
+  <ul>
+    <li>Cubre gran parte del escritorio y ofrece espacio amplio para laptop, teclado y mouse. Movimiento fluido sin interrupciones.</li>
+    <li>Superficie de licra ultra suave: Deslizamiento preciso y cómodo. Ideal para trabajo, estudio o gaming.  </li>
+    <li>Bordes cosidos resistentes: Evita deshilachado y mejora la durabilidad. Diseño estético y funcional.</li>
+    <li>Revestimiento anti derrames: Protege contra líquidos, tinta y accidentes. Fácil de limpiar y transportar. </li>
+    
+    
+   
+    
+  </ul>
+</div>
+
+<div class="tab-content" id="especificaciones" style="display: none;">
+  <ul>
+   
+  <li>Marca: Siski</li>
+
+  <li>Tipo: Mousepad XL Gamer Edicion Limitada, Impermeable</li>
+
+  <li>Dimensones: 31.5 pulgadas de largo X 11.8 pulgadas de ancho</li>
+
+  <li>Material: Tela sintética</li>
+
+
+</ul>
+
+
+                       
+  </ul>
+</div>
+
+<div class="tab-content" id="promociones" style="display: none;">
+  <ul>
+    <li>🛡️ Garantía: 6 meses ✅</li>
+    <li>🎁 Envío gratis: ✅</li>
+    <li>💳 Pago por transferencia disponible: ✅ </li>
+  </ul>
+</div>
+
+  </div>
+</section>
+
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+             <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+  const mainImage = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumb');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      mainImage.src = thumb.src;
+    });
+  });
+</script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Quitar clase activa de todos los botones
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Ocultar todos los contenidos
+      contents.forEach(content => content.style.display = 'none');
+
+      // Mostrar el contenido correspondiente
+      const target = tab.getAttribute('data-tab');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
