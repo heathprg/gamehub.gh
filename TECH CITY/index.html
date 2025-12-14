@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH CITY</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="favicon.png"> </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="cards\logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="https://www.instagram.com/techcity.cuba/"><img src="cards/isnta 2.png" alt=""></a></li>
+                <li><a href="https://wa.me/qr/MKHI67WXDVL7F1"><img src="cards/whatsapp.png"></a></li>
+                <li><a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt"><img src="cards/icono de grupo.png"></a></li>
+                
+                
+            </ul>
+        </nav>
+        <!-- <div class="hero">
+
+            
+                        <h1>Juega como un PRO</h1>
+            
+            
+            <a href="#go to" class="btn-principal">Equípate en Tech City</a>
+        </div> -->
+    </header>
+
+    <main>
+
+        
+        
+       <section class="carrusel">
+  <div class="carrusel-inner">
+    <a href="joysticks.html#go-to">
+      <img src="cards/top tech city 2 beta a 2.webp" alt="Fondo Joysticks" class="fondo">
+    </a>
+    <a href="mouse.html#go-to">
+      <img src="cards/fondo segundo.webp" alt="Fondo Mouse" class="fondo">
+    </a>
+  </div>
+</section>
+
+<script>
+  const carruselInner = document.querySelector(".carrusel-inner");
+  const slides = document.querySelectorAll(".carrusel-inner a"); // ahora seleccionamos los <a>
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    carruselInner.style.transform = `translateX(-${index * 100}%)`;
+  }, 5000); // cambia cada 5 segundos
+</script>
+
+
+
+
+
+           <section class="carrusel-movil">
+  <div class="carrusel-inner-movil">
+    <a href="joysticks.html#go-to">
+      <img class="fondo-movil" src="cards/cell fondo.webp" alt="Fondo Joysticks">
+    </a>
+    <a href="joysticks.html#go-to">
+      <img class="fondo-movil" src="cards/cell fondo 2.webp" alt="Fondo Mouse">
+    </a>
+
+    <script>
+  const carruselInnerMovil = document.querySelector(".carrusel-inner-movil");
+  const slidesMovil = document.querySelectorAll(".carrusel-inner-movil a");
+  let indexMovil = 0;
+
+  setInterval(() => {
+    indexMovil = (indexMovil + 1) % slidesMovil.length;
+    carruselInnerMovil.style.transform = `translateX(-${indexMovil * 100}%)`;
+  }, 3000); // cambia cada 5 segundos
+</script>
+
+  </div>
+</section>
+ 
+
+          <section class="benefits-section">
+  <h2>¿QUÉ TE OFRECEMOS?</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <img src="cards/icon-support.webp" alt="Atención al cliente">
+      <p><strong>Atención al Cliente</strong><br>El soporte de Tech City está activo las 24h</p>
+    </div>
+    <div class="benefit-item">
+      <img src="cards/icon-envio.webp" alt="Mensajería">
+      <p><strong>Mensajería Gratuita</strong><br>Compra desde la comodidad de tu sofá</p>
+    </div>
+    <div class="benefit-item">
+      <img src="cards/icon-premium.webp" alt="Productos Premium">
+      <p><strong>Productos Premium</strong><br>Solo lo mejor en calidad y rendimiento.</p>
+    </div>
+    <div class="benefit-item">
+      <img src="cards/icon-garantia.webp" alt="Garantía">
+      <p><strong>Garantía Exclusiva</strong><br>Simplemente la mejor del mercado</p>
+    </div>
+  </div>
+  <a href="#catalogo" class="cta-button">EXPLORAR TECH CITY</a>
+</section>
+
+
+
+
+
+            <section class="categorias-section">
+            <h2 id="go-to">Categorías</h2>
+            <div class="grid-icon">
+
+                <!-- nuevos -->
+                <div class="producto">
+                <article class="icon-card">
+                <a href="joysticks.html#go-to"><img src="cards/hall gris 2.webp" alt="Nombre del Producto 1"></a>
+               </article>
+               <h3>Mando Hall Effect</h3>
+               </div>
+
+               <div class="producto">
+                <article class="icon-card">
+                <a href="mouse.html#go-to"><img src="cards/mouse gris 2.webp" alt="Nombre del Producto 1"></a>
+               </article>
+               <h3>Mouse Gamer</h3>
+               </div>
+
+               <div class="producto">
+                <article class="icon-card">
+                <a href="teclado.html#go-to"><img src="cards/teclado gris 2.webp" alt="Nombre del Producto 1"></a>
+                </article>
+                <h3>Teclado Mecánico</h3>
+                </div>
+
+                <div class="producto">
+                <article class="icon-card">
+                <a href="auriculares.html#go-to"><img src="cards/auriculares gris 2.webp" alt="Nombre del Producto 1"></a>
+               </article>  
+               <h3>Auriculares Gamer</h3>
+               </div>
+            
+               <div class="producto">
+               <article class="icon-card">
+                <a href="componentes.html#go-to"><img src="cards/comp gris 2.webp" alt="Nombre del Producto 1"></a>
+               </article> 
+               <h3>Componentes de PC</h3>
+               </div>
+
+               <div class="producto">
+               <article class="icon-card">
+                <a href="accesorios.html#go-to"><img src="cards/pads gris 2_.webp" alt="Nombre del Producto 1"></a> 
+               </article> 
+               <h3>Mousepads Premium</h3>
+               </div>
+
+            </div>
+            </section> 
+
+            <section class="productos-section">
+  <h2>Descubre Nuestros Productos</h2>
+  <div class="grid-productos">
+    
+    <div class="productos">
+  <article class="producto-item">
+    <a href="producto/gamesir nova lite 2/index.html">
+      <img src="cards/hall gris 2.webp" alt="Producto">
+    </a>
+    <h3>Gamesir Nova 2</h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$50.00</span>
+      <span class="precio-nuevo">$49.99</span> -->
+      <span class="precio-base">$50.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/redragon H878/index.html">
+      <img src="cards/auriculares gris 2.webp" alt="Red Dragon Skul Pro">
+    </a>
+    <h3>Red Dragon Skuld Pro</h3>
+    <p class="precio">
+      <span class="precio-antiguo">$50.00</span>
+      <span class="precio-nuevo">$40.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/gamesir cyclone 2">
+      <img src="cards/gamesir cyclone 2 base.webp" alt="Producto">
+    </a>
+    <h3>GameSir Cyclone 2</h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$59.99</span>
+      <span class="precio-nuevo">$49.99</span> -->
+      <span class="precio-base">$80.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/red dragon m612/index.html">
+      <img src="cards/red dragon m612 predator.webp" alt="Producto">
+    </a>
+    <h3>Red M612 Predator</h3>
+    <p class="precio">
+      <span class="precio-antiguo">$35.00</span>
+      <span class="precio-nuevo">$29.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/flydigi dunefox/index.html">
+      <img src="cards/flydigi_.webp" alt="Producto">
+    </a>
+    <h3>Flydigi DuneFox </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$59.99</span>
+      <span class="precio-nuevo">$49.99</span> -->
+      <span class="precio-base">$35.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/ram ddr4 corsair rgb/index.html">
+      <img src="cards/comp gris 2.webp" alt="Producto">
+    </a>
+    <h3>Ram DDR4 Corsair Vengueance RGB</h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$59.99</span>
+      <span class="precio-nuevo">$49.99</span> -->
+       <span class="precio-base">$60.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock">3 unidades</button>
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </article>
+</div>
+
+
+    </section>
+
+    <section class="nuevos-lanzamientos">
+  <h2>Nuevos Lanzamientos</h2>
+  <p class="subtitulo">Descubre lo más novedoso de Tech City</p>
+
+  <div class="grid-lanzamientos">
+    <div class="lanzamiento">
+      <a href="producto/gamesir cyclone 2/index.html"><img src="cards/cyclone banner.webp" alt="Banner 1"></a>
+      <div class="contenido">
+        <!-- <h3>PlayStation 5</h3>
+        <p>Gráficos de última generación y carga ultra rápida.</p>
+        <span class="precio-base">$499.00</span> -->
+      </div>
+    </div>
+
+    <div class="lanzamiento">
+      <a href="producto/redragon H878/index.html"><img src="cards/banner h878.webp" alt="Banner 2"></a>
+      <div class="contenido">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  
+</script>
+
+
+    <!-- Agrega más productos aquí -->
+  </div>
+</section>
+
+
+    
+
+
+
+
+
+            
+            </div>
+        </section>
+
+        <section class="llamada-accion">
+            <h2>¿Buscas algo específico?</h2>
+            <p>Explora nuestro catálogo completo o contáctanos.</p>
+            <a href="https://wa.me/qr/MKHI67WXDVL7F1" class="btn-secundario">Contactar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const productos = document.querySelectorAll('.producto-item');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');   // dispara animación
+        } else {
+          entry.target.classList.remove('visible'); // la quita para reiniciar
+        }
+      });
+    }, { threshold: 0.2 }); // se activa cuando el 20% es visible
+
+    productos.forEach(producto => {
+      producto.classList.add('zoom'); // si quieres efecto zoom además del fade
+      observer.observe(producto);
+    });
+  });
+</script>
+
+
+
+<script>
+  // Espera a que el DOM esté listo
+  document.addEventListener('DOMContentLoaded', () => {
+    const lanzamientos = document.querySelectorAll('.lanzamiento');
+
+    // Observa cuando las tarjetas entran/salen del viewport
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animar');  // dispara animación
+        } else {
+          entry.target.classList.remove('animar'); // reinicia para que vuelva a animarse
+        }
+      });
+    }, { threshold: 0.2 });
+
+    lanzamientos.forEach((lanzamiento) => observer.observe(lanzamiento));
+  });
+</script>
+
+
+</body>
+</html>
