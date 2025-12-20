@@ -612,3 +612,11 @@ footer ul li a:hover {
   border-radius: 8px;
   font-weight: bold;
 }
+
+
+header img {
+  width: 100%;       /* ocupa todo el ancho disponible */
+  height: auto;      /* mantiene proporción */
+  object-fit: cover; /* recorta sin deformar */
+  display: block;    /* evita espacios extra por inline */
+}
