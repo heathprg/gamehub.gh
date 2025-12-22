@@ -607,8 +607,25 @@ footer ul li a:hover {
 .price {
   color: #f1f1f1; /* gris claro sobre negro */
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
+
+.price-old {
+  
+  color: #f1f1f1; /* gris claro sobre negro */ font-weight: bold; font-size: 0.8rem; text-decoration: line-through; /* tachado */
+}
+.price-dsc {
+  color: #f31111; /* gris claro sobre negro */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.price-oldt { color: #f1f1f1;  font-weight: normal; 
+     font-size: 1.2rem; margin-right: 5px;  }
+
+
+
+
+
 
 
 .add-to-cart {
@@ -731,3 +748,18 @@ footer ul li a:hover {
     display: inline-block;        /* No ocupa toda la línea */
   }
 }
+
+.link-naranja {
+  color: #ff6a00;        /* color principal */
+  text-decoration: none; /* opcional: quita el subrayado */
+}
+
+.link-naranja:hover {
+  color: #ff8f3a;        /* color al pasar el mouse */
+  text-decoration: underline;
+}
+
+.link-naranja:visited {
+  color: #cc5500;        /* color cuando ya fue visitado */
+}
+
