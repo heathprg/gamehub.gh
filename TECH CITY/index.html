@@ -172,6 +172,116 @@
             </section> 
 
             <section class="productos-section">
+  <h2>NEW META</h2>
+  <div class="grid-productos">
+    
+   
+
+<div class="productos">
+  <article class="producto-item">
+
+    <span class="tag"><span class="estrella">⭐</span> OFERTA</span>
+
+    <a href="producto/red dragon k617/index.html">
+      <img src="cards/red dragon k617.webp" alt="Producto">
+    </a>
+    <h3>Red Dragon Fizz </h3>
+    <p class="precio">
+      <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span>
+      <!-- <span class="precio-base">$65.00</span> -->
+    </p>
+    <div class="botones">
+      <button class="btn-stock">1 unidad</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/red dragon k617/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+
+
+
+
+    <div class="productos">
+  <article class="producto-item">
+    <span class="tag"><span class="estrella">⭐</span> OFERTA</span>
+    <a href="producto/gamesir nova lite 2/index.html">
+      <img id="imgProducto" src="cards/hall gris 2.webp" alt="Producto">
+    </a>
+    <h3>Gamesir Nova v2</h3>
+    <p class="precio">
+      <span class="precio-antiguo">$50.00</span>
+      <span class="precio-nuevo">$44.00</span>
+      <!-- <span class="precio-base">$50.00</span> -->
+    </p>
+    <div class="botones">
+      <button class="btn-stock">2 unidades</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/gamesir nova lite 2/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<script>
+  const img = document.getElementById("imgProducto");
+  const imagenes = ["cards/hall gris 2.webp", "cards/gamesir nova 2 w.webp"];
+  let indice = 0;
+
+  setInterval(() => {
+    indice = (indice + 1) % imagenes.length;
+    img.src = imagenes[indice];
+  }, 3000); // cambia cada 3 segundos
+</script>
+
+
+
+
+
+
+
+
+
+<div class="productos">
+  <article class="producto-item">
+    <span class="tag"><span class="estrella">⭐</span> OFERTA</span>
+    <a href="producto/ram ddr4 corsair rgb/index.html">
+      <img id="imgRam" src="cards/comp gris 2.webp" alt="Producto">
+    </a>
+    <h3>Ram DDR4 Corsair Vengueance RGB</h3>
+    <p class="precio">
+      <span class="precio-antiguo">$80.00</span>
+      <span class="precio-nuevo">$60.00</span>
+      <!-- <span class="precio-base">$80.00</span> -->
+    </p>
+    <div class="botones">
+      <button class="btn-stock">1 unidad</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/ram ddr4 corsair rgb/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<script>
+  const imgRam = document.getElementById("imgRam");
+  const imagenesRam = [
+    "cards/comp gris 2.webp",
+    "cards/corsair venguance white.webp"
+  ];
+  let indiceRam = 0;
+
+  setInterval(() => {
+    indiceRam = (indiceRam + 1) % imagenesRam.length;
+    imgRam.src = imagenesRam[indiceRam];
+  }, 3000); // cambia cada 3 segundos
+</script>
+
+
+
+
+
+
+    </section>
+
+
+    <section class="productos-section">
   <h2>Descubre Nuestros Productos</h2>
   <div class="grid-productos">
     
@@ -194,48 +304,11 @@
   </article>
 </div>
 
-<div class="productos">
-  <article class="producto-item">
-    <a href="producto/red dragon k617/index.html">
-      <img src="cards/red dragon k617.webp" alt="Producto">
-    </a>
-    <h3>Red Dragon K617 </h3>
-    <p class="precio">
-      <!-- <span class="precio-antiguo">$59.99</span>
-      <span class="precio-nuevo">$49.99</span> -->
-      <span class="precio-base">$65.00</span>
-    </p>
-    <div class="botones">
-      
-      <button class="btn-stock">1 unidad</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/red dragon k617/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
 
 
 
 
-    <div class="productos">
-  <article class="producto-item">
-    <a href="producto/gamesir nova lite 2/index.html">
-      <img src="cards/hall gris 2.webp" alt="Producto">
-    </a>
-    <h3>Gamesir Nova 2</h3>
-    <p class="precio">
-      <!-- <span class="precio-antiguo">$50.00</span>
-      <span class="precio-nuevo">$49.99</span> -->
-      <span class="precio-base">$50.00</span>
-    </p>
-    <div class="botones">
-      
-      <button class="btn-stock">2 unidades</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/gamesir nova lite 2/index.html'">Comprar</button>
-
-
-    </div>
-  </article>
-</div>
+  
 
 <div class="productos">
   <article class="producto-item">
@@ -314,16 +387,16 @@
   </article>
 </div>
 
-<div class="productos">
+<!-- <div class="productos">
   <article class="producto-item">
     <a href="producto/ram ddr4 corsair rgb/index.html">
       <img src="cards/comp gris 2.webp" alt="Producto">
     </a>
     <h3>Ram DDR4 Corsair Vengueance RGB</h3>
     <p class="precio">
-      <!-- <span class="precio-antiguo">$80.00</span>
+       <span class="precio-antiguo">$80.00</span>
       <span class="precio-nuevo">$60.00</span> -->
-       <span class="precio-base">$80.00</span>
+       <!-- <span class="precio-base">$80.00</span>
     </p>
     <div class="botones">
       
@@ -331,7 +404,7 @@
       <button class="btn-comprar" onclick="window.location.href='producto/ram ddr4 corsair rgb/index.html'">Comprar</button>
     </div>
   </article>
-</div>
+</div> --> 
 
 
     </section>
