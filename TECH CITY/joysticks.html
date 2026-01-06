@@ -109,22 +109,33 @@
     
     <div class="productos">
   <article class="producto-item">
+    <span class="tag"><span class="estrella">⭐</span> OFERTA</span>
     <a href="producto/gamesir nova lite 2/index.html">
-      <img src="cards/hall gris 2.webp" alt="Producto">
+      <img id="imgProducto" src="cards/hall gris 2.webp" alt="Producto">
     </a>
-    <h3>Gamesir Nova 2</h3>
+    <h3>Gamesir Nova v2</h3>
     <p class="precio">
-      <!-- <span class="precio-antiguo">$50.00</span>
-      <span class="precio-nuevo">$49.99</span> -->
-      <span class="precio-base">$50.00</span>
+      <span class="precio-antiguo">$50.00</span>
+      <span class="precio-nuevo">$44.00</span>
+      <!-- <span class="precio-base">$50.00</span> -->
     </p>
     <div class="botones">
-      
       <button class="btn-stock">2 unidades</button>
       <button class="btn-comprar" onclick="window.location.href='producto/gamesir nova lite 2/index.html'">Comprar</button>
     </div>
   </article>
 </div>
+
+<script>
+  const img = document.getElementById("imgProducto");
+  const imagenes = ["cards/hall gris 2.webp", "cards/gamesir nova 2 w.webp"];
+  let indice = 0;
+
+  setInterval(() => {
+    indice = (indice + 1) % imagenes.length;
+    img.src = imagenes[indice];
+  }, 3000); // cambia cada 3 segundos
+</script>
 
 <div class="productos">
   <article class="producto-item">
