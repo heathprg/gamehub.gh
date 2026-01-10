@@ -1,0 +1,198 @@
+  /* Asegura medidas consistentes */
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* negrita */
+  }
+  
+  .encabezado h1 {
+  position: relative;       /* necesario para ubicar la línea */
+  cursor: pointer;          /* da sensación de enlace */
+  margin: 0 12px;           /* separación entre títulos */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.encabezado h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;             /* justo debajo del texto */
+  width: 0%;
+  height: 2px;
+  background-color: purple; /* color morado */
+  transition: width 0.3s ease;
+}
+
+.encabezado h1:hover::after {
+  width: 100%;              /* se expande al pasar el mouse */
+}
+
+  p, span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* normal */
+  }
+  
+  /* Contenedor principal */
+  .catalogo {
+    width: 100vw;           /* ocupa todo el ancho de la pantalla */
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1 ;
+  }
+
+  .catalogo h2 {
+    margin-top: 0;
+    text-align: center;   /* centra el texto horizontalmente */
+  }
+  
+  
+
+  /* Grid de productos */
+  .grid-productos {
+    display: flex;
+    flex-wrap: wrap;        /* permite varias filas */
+    gap: 5px;               /* espacio entre tarjetas */
+    padding: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .producto-item {
+    width: 300px;
+    max-width: 300px;
+    /* height: auto; */   /* quita la altura fija */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+
+  /* Imagen cuadrada */
+  .producto-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;    /* cuadrado perfecto */
+    object-fit: cover;
+    display: block;
+  }
+
+  .info-producto {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between; /* texto a la izquierda, botón a la derecha */
+    align-items: center;            /* alineación vertical */
+  }
+  
+  .info-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .btn-comprar {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  .marca {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .modelo {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .precio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Footer de la tarjeta */
+  .footer-card {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+
+  @media (max-width: 600px) {
+    .producto-item {
+      width: 100%; /* 1 por fila en móvil */
+    }
+  }
+
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #4e4e4e;
+  }
+  
+  .encabezado h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav-iconos a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+  }
+  
+  .pie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    border-top: 1px solid #bbbbbb;
+    padding: 8px 0;
+  }
+  
+  .nav-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-footer a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .catalogo {
+  padding-bottom: 1000px; /* espacio para que el footer no tape las tarjetas */
+}
