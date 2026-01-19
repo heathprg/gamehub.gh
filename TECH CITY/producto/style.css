@@ -763,3 +763,14 @@ footer ul li a:hover {
   color: #cc5500;        /* color cuando ya fue visitado */
 }
 
+@media (min-width: 769px) {
+  .main-image {
+    max-height: 500px;   /* puedes probar con 400px o 450px según tu diseño */
+    width: auto;
+    object-fit: contain; /* mantiene proporción sin recortar */
+    display: block;
+    margin: auto;
+  }
+}
+
+
