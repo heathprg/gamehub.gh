@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADATA 4GB - TECH CITY</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+    <meta property="og:title" content="ADATA DDR4 2666MHz - TECH CITY" />
+    <meta property="og:description" content="2x4 GB, DDR4, CL19, 2666 MHz" />
+    <meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/cards/ram%20adata%202666.webp"/>
+    <meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/ram%20ddr4%20adata%202666/index.html" />
+</head>
+<body>
+    
+
+    <header>
+         <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/techcity.cuba/">
+                  <img src="../../cards/isnta 2.png" alt="Instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/qr/MKHI67WXDVL7F1">
+                  <img src="../../cards/whatsapp.png" alt="WhatsApp">
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt">
+                  <img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp">
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- PRODUCT SECTION -->
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="Producto principal" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+     
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">ADATA RAM DDR4 (1x4GB)</h2>
+    <p class="product-description">
+      Kit de memoria ADATA DDR4 de 4GB (1x4GB), diseñado para PCs de gama de entrada con frecuencia de 2666 MHz y latencia CL19.
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+    </select>
+
+    <p><span class="price">$13 USD </span></p>
+    <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+      const phone = "56135231"; 
+      const productTitle = document.title; 
+      const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      document.querySelector(".add-to-cart").addEventListener("click", function() {
+        window.open(url, "_blank"); 
+      });
+    </script>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="caracteristicas">Características</button>
+      <button class="tab" data-tab="especificaciones">Especificaciones</button>
+      <button class="tab" data-tab="promociones">Extra</button>
+    </div>
+
+    <div class="tab-content" id="caracteristicas">
+      <ul>
+        <li> 4 GB de RAM DDR4, 1 Sticks de 4GB</li>
+        <li> Velocidad de memoria: 2666 MHz </li>
+        <li> Perfil estándar para máxima compatibilidad</li>
+        <li> Compatible con Intel y AMD </li>
+
+      </ul>
+    </div>
+
+    <div class="tab-content" id="especificaciones" style="display: none;">
+      <ul>
+        <li>Tipo de memoria: DDR4</li>
+        <li>Frecuencia: 2666 MHz</li>
+        <li>Capacidad total: 4 GB (1x4GB)</li>
+        <li>Voltaje: 1,2 Voltios</li>
+        <li>CAS Latency: CL19</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="promociones" style="display: none;">
+      <ul>
+        <li>🛡️ Garantía: 1 mes ✅</li>
+        <li>🎁 Envío gratis: ✅</li>
+        <li>💳 Pago por transferencia disponible: ✅ </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+             <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+    <script>
+      const mainImage = document.getElementById('mainImage');
+      const thumbnails = document.querySelectorAll('.thumb');
+      thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+          mainImage.src = thumb.src;
+        });
+      });
+    </script>
+
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          contents.forEach(content => content.style.display = 'none');
+          const target = tab.getAttribute('data-tab');
+          document.getElementById(target).style.display = 'block';
+        });
+      });
+    </script>
+
+</body>
+</html>
