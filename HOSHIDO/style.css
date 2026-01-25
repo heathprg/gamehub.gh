@@ -143,13 +143,22 @@
     align-items: center;
   }
 
- 
-
   @media (max-width: 600px) {
-    .producto-item {
-      width: 100%; /* 1 por fila en móvil */
-    }
+  .producto-item {
+    width: calc(50% - 5px);   /* 2 tarjetas por fila */
+    max-width: none;          /* elimina el límite de 300px */
+    height: auto;             /* que se ajuste al contenido */
+    
   }
+  
+
+  .producto-item img {
+    height: 200px;            /* altura más baja para móvil */
+    object-fit: cover;
+  }
+}
+
+
 
   .encabezado {
     display: flex;
@@ -165,6 +174,8 @@
     font-weight: bold;
     margin: 0;
   }
+
+  @media (max-width: 600px) { .encabezado h1 { font-size: 14px; /* más pequeño en móvil */ margin: 0 6px; /* menos separación */ } }
   
   .nav-iconos a img {
     width: 24px;
@@ -197,8 +208,10 @@
   padding-bottom: 1000px; /* espacio para que el footer no tape las tarjetas */
 }
 
+
 .top img {
   max-width: 100%;   /* nunca excede el ancho del contenedor */
   height: auto;      /* mantiene la proporción */
   display: block;    /* elimina espacios extra */
 }
+
