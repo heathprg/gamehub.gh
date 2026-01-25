@@ -196,3 +196,9 @@
   .catalogo {
   padding-bottom: 1000px; /* espacio para que el footer no tape las tarjetas */
 }
+
+.top img {
+  max-width: 100%;   /* nunca excede el ancho del contenedor */
+  height: auto;      /* mantiene la proporción */
+  display: block;    /* elimina espacios extra */
+}
