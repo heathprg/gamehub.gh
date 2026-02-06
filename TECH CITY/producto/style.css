@@ -612,10 +612,10 @@ footer ul li a:hover {
 
 .price-old {
   
-  color: #f1f1f1; /* gris claro sobre negro */ font-weight: bold; font-size: 0.8rem; text-decoration: line-through; /* tachado */
+  color: #f1f1f1;  font-weight: bold; font-size: 0.8rem; text-decoration: line-through; /* tachado */
 }
 .price-dsc {
-  color: #f31111; /* gris claro sobre negro */
+  color: #f31111; 
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -629,7 +629,7 @@ footer ul li a:hover {
 
 
 .add-to-cart {
-  background-color: #cb2c2c;   /* rojo fuerte para resaltar */
+  background-color: #cb2c2c;   
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -640,8 +640,8 @@ footer ul li a:hover {
 }
 
 .add-to-cart:hover {
-  background-color: #d5640e;   /* naranja al pasar el mouse */
-  transform: scale(1.05);      /* pequeño zoom para dar feedback */
+  background-color: #d5640e;  
+  transform: scale(1.05);      
 }
 
 
@@ -653,9 +653,9 @@ footer ul li a:hover {
 
 .tab {
   padding: 0.5rem 1rem;
-  background-color: #f8f1ee;   /* fondo claro para contraste */
-  border: 2px solid #d5640e;   /* borde naranja */
-  color: #d5640e;              /* texto naranja */
+  background-color: #f8f1ee;   
+  border: 2px solid #d5640e;  
+  color: #d5640e;             
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
@@ -663,11 +663,11 @@ footer ul li a:hover {
 }
 
 .tab:hover {
-  background-color: #ffe5d0;   /* naranja muy suave al pasar el mouse */
+  background-color: #ffe5d0;   
 }
 
 .tab.active {
-  background-color: #cb2c2c;   /* rojo fuerte para el activo */
+  background-color: #cb2c2c;   
   color: white;
   border-color: #cb2c2c;
 }
@@ -678,7 +678,7 @@ footer ul li a:hover {
 }
 
 
-/* Ajustes responsivos para la galería en móviles */
+
 @media (max-width: 600px) {
   .product-container {
     flex-direction: column;
@@ -698,15 +698,15 @@ footer ul li a:hover {
 
   .thumbnails {
     display: flex;
-    flex-wrap: wrap;       /* Permite que las miniaturas bajen a otra línea */
+    flex-wrap: wrap;       
     justify-content: center;
     gap: 0.5rem;
   }
 
   .thumbnails img {
-    width: 60px;           /* Miniaturas más pequeñas en móvil */
+    width: 60px;           
     height: auto;
-    flex: 0 0 auto;        /* Evita que se estiren */
+    flex: 0 0 auto;        
   }
 
   .product-info {
@@ -721,7 +721,7 @@ footer ul li a:hover {
   }
 
   header nav {
-    flex-direction: row;          /* Logo y menú en la misma fila */
+    flex-direction: row;         
     align-items: center;
     justify-content: space-between;
   }
@@ -731,46 +731,84 @@ footer ul li a:hover {
   }
 
   header nav ul {
-    flex-direction: row;          /* Menú horizontal */
-    flex-wrap: nowrap;            /* No se parte en varias líneas */
-    overflow-x: auto;             /* Se desliza si no cabe */
+    flex-direction: row;          
+    flex-wrap: nowrap;            
+    overflow-x: auto;             
     -webkit-overflow-scrolling: touch;
   }
 
   header nav ul li {
     margin: 0 8px;
-    flex: 0 0 auto;               /* Cada ítem ocupa solo su ancho */
+    flex: 0 0 auto;               
   }
 
   header nav ul li a {
     font-size: 14px;
     padding: 5px 8px;
-    display: inline-block;        /* No ocupa toda la línea */
+    display: inline-block;        
   }
 }
 
 .link-naranja {
-  color: #ff6a00;        /* color principal */
-  text-decoration: none; /* opcional: quita el subrayado */
+  color: #ff6a00;       
+  text-decoration: none;
 }
 
 .link-naranja:hover {
-  color: #ff8f3a;        /* color al pasar el mouse */
+  color: #ff8f3a;        
   text-decoration: underline;
 }
 
 .link-naranja:visited {
-  color: #cc5500;        /* color cuando ya fue visitado */
+  color: #cc5500;       
 }
 
 @media (min-width: 769px) {
   .main-image {
-    max-height: 500px;   /* puedes probar con 400px o 450px según tu diseño */
+    max-height: 500px;   
     width: auto;
-    object-fit: contain; /* mantiene proporción sin recortar */
+    object-fit: contain; 
     display: block;
     margin: auto;
   }
 }
 
 
+.product-gallery {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+}
+
+.main-image {
+  max-width: 600px;        
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: block;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;                
+  justify-content: center;  
+  flex-wrap: wrap;         
+}
+
+.thumbnails img {
+  width: 80px;              
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .main-image {
+    max-width: 100%;
+  }
+  .thumbnails img {
+    width: 60px;
+  }
+}
