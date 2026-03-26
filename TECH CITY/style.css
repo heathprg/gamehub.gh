@@ -11,7 +11,7 @@ header {
   background-color: #0c131a;
   color: #fff;
   padding: 10px 20px;
-  border-bottom: 3px solid #d5640e;
+  border-bottom: 3px solid #ee064c;
 }
 
 header nav {
@@ -147,6 +147,9 @@ header nav ul li a:hover {
 }
 
 .producto-item {
+   /* background-image: url('cards/fondo\ new\ meta\ boton\ copia.webp');
+  background-size: cover;      
+  background-position: center;  */
   background-color: #333;
   border-radius: 8px;
   width: 100%;
@@ -624,4 +627,21 @@ header img {
 .producto-item .tag { position: absolute; top: 10px; left: 10px; 
   background: #e63946;  color: #fff; 
   font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-transform: uppercase; }
+
+.new-meta {
+  text-align: center; /* centra todo lo que esté dentro */
+}
+
+.boton-texto {
+  background-color: #ff0040; 
+  color: white;             
+  padding: 5px 15px;       
+  
+  display: inline-block;     
+  font-weight: bold;         
+  cursor: pointer;           
+}
+    
+
+     
 
