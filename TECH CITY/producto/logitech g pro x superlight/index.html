@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logitech G Pro X Superlight - TECH CITY</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png">
+  <meta property="og:title" content="Logitech G Pro X Superlight - TECH CITY" />
+  <meta property="og:description" content="Mouse gamer ultraligero, inalámbrico, con sensor HERO 25K y switches mecánicos de alto rendimiento." />
+  <meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/cards/superlight.webp" />
+  <meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20gpro%20superlight/index.html" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+    </div>
+    <ul>
+      <li><a href="https://www.instagram.com/techcity.cuba/"><img src="../../cards/isnta 2.png" alt="Instagram"></a></li>
+      <li><a href="https://wa.me/qr/MKHI67WXDVL7F1"><img src="../../cards/whatsapp.png" alt="WhatsApp"></a></li>
+      <li><a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt"><img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp"></a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="Producto principal" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+      <img src="producto 2.webp" alt="Vista 2" class="thumb">
+      <img src="producto 3.webp" alt="Vista 3" class="thumb">
+      <img src="producto 4.webp" alt="Vista 4" class="thumb">
+      <img src="producto 5.webp" alt="Vista 5" class="thumb">
+      <img src="producto 6.webp" alt="Vista 6" class="thumb">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">Logitech G Pro X Superlight</h2>
+    <p class="product-description">
+      El G Pro X Superlight redefine la velocidad y precisión en los eSports. Con un peso de solo 63 gramos, sensor HERO 25K y tecnología inalámbrica LIGHTSPEED, es el mouse elegido por profesionales para un rendimiento sin igual.
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+      <option>Blanco</option>
+      <option>Rosa</option>
+    </select>
+
+    <p class="price">$90 USD</p>
+    <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+      const phone = "56135231";
+      const productTitle = document.title;
+      const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      document.querySelector(".add-to-cart").addEventListener("click", function() {
+        window.open(url, "_blank");
+      });
+    </script>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="caracteristicas">Características</button>
+      <button class="tab" data-tab="especificaciones">Especificaciones</button>
+      <button class="tab" data-tab="promociones">Extra</button>
+    </div>
+
+    <div class="tab-content" id="caracteristicas">
+      <ul>
+        <li>Ultraligero: solo 63 gramos</li>
+        <li>Sensor HERO 25K con precisión 1:1 y hasta 25,600 DPI</li>
+        <li>Conectividad inalámbrica LIGHTSPEED de baja latencia</li>
+        <li>Batería de larga duración (hasta 70 horas)</li>
+        <li>Pies de PTFE 100% para deslizamiento suave</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="especificaciones" style="display: none;">
+      <ul>
+        <li>Sensor HERO 25K: más de 400 IPS, sin aceleración ni suavizado</li>
+        <li>Botones mecánicos de alto rendimiento</li>
+        <li>Conectividad: inalámbrico LIGHTSPEED + cable USB-C para carga</li>
+        <li>Peso: 63 gramos</li>
+        <li>Compatibilidad: Windows y macOS</li>
+        <li>Software: Logitech G HUB</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="promociones" style="display: none;">
+      <ul>
+        <li>🛡️ Garantía: 6 meses ✅</li>
+        <li>🎁 Envío gratis: ✅</li>
+        <li>💳 Pago por transferencia disponible: ❌</li>
+        <li>🔗 Software: Logitech G HUB disponible en logitechg.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+  <ul>
+    <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+    <li><a href="#">Términos de Servicio</a></li>
+  </ul>
+</footer>
+
+<script>
+  const mainImage = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumb');
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      mainImage.src = thumb.src;
+    });
+  });
+</script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      contents.forEach(content => content.style.display = 'none');
+      const target = tab.getAttribute('data-tab');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
