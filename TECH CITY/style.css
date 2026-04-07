@@ -252,6 +252,17 @@ header nav ul li a:hover {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+.btn-stock0 {
+  background-color: #890aff;
+  color: #ffffff;
+  border: 2px solid #890aff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
 
 .btn-stock:hover {
   background-color: #ffe5d0;
