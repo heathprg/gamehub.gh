@@ -641,7 +641,7 @@ header img {
   font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-transform: uppercase; }
 
 .new-meta {
-  text-align: center; /* centra todo lo que esté dentro */
+  text-align: center; 
 }
 
 .boton-texto {
@@ -654,6 +654,20 @@ header img {
   cursor: pointer;           
 }
     
+.discount-tag {
+  background-color: #CC0C39; 
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
 
-     
+.tag-oferta {
+position: absolute; top: 10px; left: 10px; 
+  background: #ff0040;  color: #fff; 
+  font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-transform: uppercase;
+
+    } 
 
