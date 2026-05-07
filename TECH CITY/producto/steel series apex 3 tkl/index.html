@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelSeries Apex 3 TKL - TECH CITY</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+    <meta property="og:title" content="SteelSeries Apex 3 TKL - TECH CITY" />
+    <meta property="og:description" content="Teclado TKL para gaming competitivo - Switches silenciosos y resistentes" />
+    <meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/cards/apex3tkl.webp" />
+    <meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/apex3tkl/index.html" />
+</head>
+<body>
+    
+
+    <header>
+         <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+              <li><a href="https://www.instagram.com/techcity.cuba/"><img src="../../cards/isnta 2.png" alt="Instagram"></a></li>
+              <li><a href="https://wa.me/qr/MKHI67WXDVL7F1"><img src="../../cards/whatsapp.png" alt="WhatsApp"></a></li>
+              <li><a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt"><img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- PRODUCT SECTION -->
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="SteelSeries Apex 3 TKL" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+      <img src="producto 2.webp" alt="Vista 2" class="thumb">
+      <img src="producto 3.webp" alt="Vista 3" class="thumb">
+      <img src="producto 4.webp" alt="Vista 4" class="thumb">
+      <img src="producto 5.webp" alt="Vista 5" class="thumb">
+      <img src="producto 6.webp" alt="Vista 6" class="thumb">
+      <img src="producto 7.webp" alt="Vista 7" class="thumb">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">SteelSeries Apex 3 TKL</h2>
+    <p class="product-description">
+      El SteelSeries Apex 3 TKL combina diseño compacto y silencioso con resistencia al agua y durabilidad extrema, pensado para jugadores competitivos que buscan rendimiento sin distracciones.
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+    </select>
+
+    <p><span class="price">$50</span>
+       
+    </p>
+    <!-- <p><span>Precio base: <span class="price-old">$80</span></span></p> -->
+    <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+      const phone = "56135231"; 
+      const productTitle = document.title; 
+      const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      document.querySelector(".add-to-cart").addEventListener("click", function() {
+        window.open(url, "_blank"); 
+      });
+    </script>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="caracteristicas">Características</button>
+      <button class="tab" data-tab="especificaciones">Especificaciones</button>
+      <button class="tab" data-tab="promociones">Extra</button>
+    </div>
+
+    <div class="tab-content" id="caracteristicas">
+      <ul>
+        <li>Formato TKL: compacto y diseñado para eSports.</li>
+        <li>Switches silenciosos: sensación suave y discreta, ideales para largas sesiones.</li>
+        <li>Resistencia al agua IP32: protección contra derrames accidentales.</li>
+        <li>Iluminación RGB personalizable con PrismSync.</li>
+        <li>Anti‑ghosting avanzado para máxima precisión en cada pulsación.</li>
+        <li>Vida útil de las teclas: ~20 millones de pulsaciones.</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="especificaciones" style="display: none;">
+      <ul>
+        <li>Tipo: Teclado de membrana silencioso.</li>
+        <li>Construcción: Plástico reforzado con resistencia IP32.</li>
+        <li>Teclas: 87 teclas estándar con anti‑ghosting.</li>
+        <li>Iluminación: RGB dinámico con software SteelSeries Engine.</li>
+        <li>Dimensiones: Largo ~364 mm x Ancho ~150 mm.</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="promociones" style="display: none;">
+      <ul>
+        <li>🛡️ Garantía: 3 meses ✅</li>
+        <li>🎁 Envío gratis: ✅</li>
+        <li>💳 Pago por transferencia disponible: ✅</li>
+        <li>Software SteelSeries Engine disponible para descarga.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+             <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+    <script>
+      const mainImage = document.getElementById('mainImage');
+      const thumbnails = document.querySelectorAll('.thumb');
+      thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+          mainImage.src = thumb.src;
+        });
+      });
+    </script>
+
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          contents.forEach(content => content.style.display = 'none');
+          const target = tab.getAttribute('data-tab');
+          document.getElementById(target).style.display = 'block';
+        });
+      });
+    </script>
+
+</body>
+</html>
