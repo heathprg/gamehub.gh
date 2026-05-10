@@ -645,7 +645,7 @@ header img {
 }
 
 .boton-texto {
-  background-color: #ff0040; 
+  background: linear-gradient(to right, #ff0040, #ff8000);
   color: white;             
   padding: 5px 15px;       
   
@@ -670,4 +670,6 @@ position: absolute; top: 10px; left: 10px;
   font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-transform: uppercase;
 
     } 
+
+
 
