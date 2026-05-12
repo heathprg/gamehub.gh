@@ -43,8 +43,8 @@
         
        <section class="carrusel">
   <div class="carrusel-inner">
-    
-      <img src="cards/nuevo lanzamiento dia de las madres.webp" alt="Fondo" class="fondo">
+    <a href="producto/gamesir nova lite 1/index.html">
+      <img src="cards/nuevo lanzamiento gamesir nova lite pc.webp" alt="Fondo" class="fondo">
     </a>
     <a href="producto/evga x12/index.html">
       <img src="cards/nuevo lanzamiento evga x12 pc.webp" alt="Fondo " class="fondo">
@@ -72,8 +72,8 @@
 
            <section class="carrusel-movil">
   <div class="carrusel-inner-movil">
-    
-      <img class="fondo-movil" src="cards/nuevo lanzamiento dia de las madres cell.webp" alt="Fondo ">
+    <a href="producto/gamesir nova lite 1/index.html">
+      <img class="fondo-movil" src="cards/nuevo lanzamiento gamesir nova lite cell.webp" alt="Fondo ">
     </a>
     <a href="producto/evga x12/index.html">
       <img class="fondo-movil" src="cards/nuevo lanzamiento evga x12 cell.webp" alt="Fondo">
@@ -128,88 +128,24 @@
             
 
             <section class="productos-section">
-              <!-- <div class="new-meta">
+              <div class="new-meta">
   <h2 class="boton-texto">NEW META</h2>
 </div>  
-<div class="new-meta"></div> -->
-<div class="new-meta">
-  <h2 class="boton-texto">LAS OFERTAS FINALIZAN EN <span id="reloj"></span>h</h2>
-  </div>
-
-    
-   
-
-  <script>
-    // Fecha objetivo: lunes a las 12:00 PM
-    const objetivo = new Date();
-    objetivo.setDate(objetivo.getDate() + ((1 + 7 - objetivo.getDay()) % 7)); // próximo lunes
-    objetivo.setHours(12, 0, 0, 0); // 12:00 PM
-
-    function actualizarReloj() {
-      const ahora = new Date().getTime();
-      const distancia = objetivo.getTime() - ahora;
-
-      if (distancia <= 0) {
-        document.getElementById("reloj").innerHTML = "¡Tiempo finalizado!";
-        clearInterval(intervalo);
-        return;
-      }
-
-      const horas = Math.floor(distancia / (1000 * 60 * 60));
-      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-      // Formato HH:MM:SS con ceros a la izquierda
-      const formato = 
-        String(horas).padStart(2, '0') + ":" +
-        String(minutos).padStart(2, '0') + ":" +
-        String(segundos).padStart(2, '0');
-
-      document.getElementById("reloj").innerHTML = formato;
-    }
-
-    const intervalo = setInterval(actualizarReloj, 1000);
-    actualizarReloj();
-  </script>
   
 
   <div class="grid-productos">
 
     <div class="productos">
   <article class="producto-item">
-    <a href="producto/logitech g413 tkl/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
-      <img src="cards/logitech tkl.webp" alt="Producto">
-    </a>
-    <h3>Logitech 413 TKL SE</h3>
-    <p class="precio">
-      <span class="precio-antiguo">$90.00</span>
-      <span class="precio-nuevo">$60.00</span>
-      <span class="discount-tag">-33% OFF</span>
-
-      <!-- <span class="precio-base">$35.00</span> -->
-    </p>
-    <div class="botones">
-      
-      <button class="btn-stock0">2 unidades</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/logitech g413 tkl/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-    <div class="productos">
-  <article class="producto-item">
     <a href="producto/steel series apex 3 tkl/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
+      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
       <img src="cards/steelseries tkl.webp" alt="Producto">
     </a>
     <h3>Steel Series APEX 3 TKL</h3>
     <p class="precio">
-      <span class="precio-antiguo">$50.00</span>
-      <span class="precio-nuevo">$42.00</span>
-      <span class="discount-tag">-16% OFF</span>
-
-      <!-- <span class="precio-base">$35.00</span> -->
+      <!-- <span class="precio-antiguo">$90.00</span>
+      <span class="precio-nuevo">$75.00</span> -->
+      <span class="precio-base">$50.00</span>
     </p>
     <div class="botones">
       
@@ -244,120 +180,18 @@
    <div class="productos">
   <article class="producto-item">
     <a href="producto/attackshark x11/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
+      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
       <img src="cards/attackshark x11.webp" alt="Producto">
     </a>
     <h3>Attack shark x11 </h3>
     <p class="precio">
-      <span class="precio-antiguo">$45.00</span>
-      <span class="precio-nuevo">$39.00</span>
-      <span class="discount-tag">-15% OFF</span>
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$45.00</span>
     </p>
     <div class="botones">
       <button class="btn-stock0">Disponible</button>
       <button class="btn-comprar" onclick="window.location.href='producto/attackshark x11/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-
-
-<div class="productos">
-  <article class="producto-item">
-    <a href="producto/asus tuf m3 gen 2/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
-      <img src="cards/asus tuf m3.webp" alt="Producto">
-    </a>
-    <h3>Asus TUF Gaming M3 gen II </h3>
-    <p class="precio">
-      <span class="precio-antiguo">$50.00</span>
-      <span class="precio-nuevo">$45.00</span>
-      <span class="discount-tag">-10% OFF</span>
-    </p>
-    <div class="botones">
-      <button class="btn-stock0">Disponible</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/asus tuf m3 gen 2/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
- <div class="productos">
-  <article class="producto-item">
-
-    <a href="producto/easy smx d10/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
-      <img src="cards/easy smx.webp" alt="Producto">
-    </a>
-    <h3>Easy SMX D10 Black </h3>
-    <p class="precio">
-      <span class="precio-antiguo">$75.00</span>
-      <span class="precio-nuevo">$65.00</span>
-      <span class="discount-tag">-15% OFF</span>
-    </p>
-    <div class="botones">
-      <button class="btn-stock0">Disponible</button>
-      <button class="btn-comprar" onclick="window.location.href='easy smx d10/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-<div class="productos">
-  <article class="producto-item">
-    <a href="producto/logitech g502 X/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
-      <img src="cards/g502x.webp" alt="Producto">
-    </a>
-    <h3>Logitech G502 X </h3>
-    <p class="precio">
-      <span class="precio-antiguo">$99.00</span>
-      <span class="precio-nuevo">$60.00</span>
-      <span class="discount-tag">-40% OFF</span>
-    </p>
-    <div class="botones">
-      <button class="btn-stock0">1 unidad</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/logitech g502 X/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-    
-   <div class="productos">
-  <article class="producto-item">
-    <a href="producto/evga x12/index.html">
-      <span class="tag-oferta"><span class="estrella"></span> OFERTA</span>
-      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
-      <img src="cards/evga x12.webp" alt="Producto">
-    </a>
-    <h3>EVGA X12 </h3>
-    <p class="precio">
-      <!-- <span class="precio-antiguo">$65.00</span>
-      <span class="precio-nuevo">$49.00</span> -->
-      <span class="precio-base">$30.00</span>
-    </p>
-    <div class="botones">
-      <button class="btn-stock0">Disponible</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/evga x12/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-  
-
-<div class="productos">
-  <article class="producto-item">
-    <a href="producto/gamesir nova lite 2/index.html">
-      <span class="tag"><span class="estrella"></span> RE STOCK</span>
-      <img id="imgProducto" src="cards/gamesir nova 2 w.webp" alt="Producto">
-    </a>
-    <h3>Gamesir Nova v2</h3>
-    <p class="precio">
-      <!-- <span class="precio-antiguo">$50.00</span>
-      <span class="precio-nuevo">$44.00</span> -->
-      <span class="precio-base">$50.00</span>
-    </p>
-    <div class="botones">
-      <button class="btn-stock0">Disponible</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/gamesir nova lite 2/index.html'">Comprar</button>
     </div>
   </article>
 </div>
@@ -380,6 +214,86 @@
     </div>
   </article>
 </div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/asus tuf m3 gen 2/index.html">
+      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
+      <img src="cards/asus tuf m3.webp" alt="Producto">
+    </a>
+    <h3>Asus TUF Gaming M3 gen II </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$50.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock0">Disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/asus tuf m3 gen 2/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+
+    
+   <div class="productos">
+  <article class="producto-item">
+    <a href="producto/evga x12/index.html">
+      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
+      <img src="cards/evga x12.webp" alt="Producto">
+    </a>
+    <h3>EVGA X12 </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$30.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock0">Disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/evga x12/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+   <div class="productos">
+  <article class="producto-item">
+
+    <a href="producto/easy smx d10/index.html">
+      <img src="cards/easy smx.webp" alt="Producto">
+    </a>
+    <h3>Easy SMX D10 Black </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$75.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock0">Disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='easy smx d10/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/gamesir nova lite 2/index.html">
+      <span class="tag"><span class="estrella"></span> RE STOCK</span>
+      <img id="imgProducto" src="cards/gamesir nova 2 w.webp" alt="Producto">
+    </a>
+    <h3>Gamesir Nova v2</h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$50.00</span>
+      <span class="precio-nuevo">$44.00</span> -->
+      <span class="precio-base">$50.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock0">Disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/gamesir nova lite 2/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
+
+
 
 
 
@@ -405,7 +319,25 @@
   </article>
 </div>
 
-
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/ram ddr4 corsair lpx/2x16.html">
+      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
+      <img src="cards/ram corsair lpx.webp" alt="Producto">
+    </a>
+    <h3>Ram DDR4 Corsair Vengeance LPX 2x16 </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$59.99</span>
+      <span class="precio-nuevo">$49.99</span> -->
+      <span class="precio-base">$99.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock0">Disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/ram ddr4 corsair lpx/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
 
 
 
@@ -437,26 +369,6 @@
 
     <div class="productos">
   <article class="producto-item">
-    <a href="producto/ram ddr4 corsair lpx/2x16.html">
-      <span class="tag"><span class="estrella"></span> NUEVO EN TC</span>
-      <img src="cards/ram corsair lpx.webp" alt="Producto">
-    </a>
-    <h3>Ram DDR4 Corsair Vengeance LPX 2x16 </h3>
-    <p class="precio">
-      <!-- <span class="precio-antiguo">$59.99</span>
-      <span class="precio-nuevo">$49.99</span> -->
-      <span class="precio-base">$99.00</span>
-    </p>
-    <div class="botones">
-      
-      <button class="btn-stock">No disponible</button>
-      <button class="btn-comprar" onclick="window.location.href='producto/ram ddr4 corsair lpx/index.html'">Comprar</button>
-    </div>
-  </article>
-</div>
-
-    <div class="productos">
-  <article class="producto-item">
 
     <a href="producto/razer seiren v3 mini/index.html">
       <img src="cards/seiren v3 mini.webp" alt="Producto">
@@ -474,9 +386,42 @@
   </article>
 </div>
 
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/logitech g502 X/index.html">
+      <img src="cards/g502x.webp" alt="Producto">
+    </a>
+    <h3>Logitech G502 X </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$99.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock0">1 unidad</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/logitech g502 X/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
 
-
-
+<div class="productos">
+  <article class="producto-item">
+    <a href="producto/logitech g413 tkl/index.html">
+      <img src="cards/logitech tkl.webp" alt="Producto">
+    </a>
+    <h3>Logitech 413 TKL SE</h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$90.00</span>
+      <span class="precio-nuevo">$75.00</span> -->
+      <span class="precio-base">$80.00</span>
+    </p>
+    <div class="botones">
+      
+      <button class="btn-stock0">2 unidades</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/logitech g413 tkl/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
 
 <div class="productos">
   <article class="producto-item">
@@ -542,7 +487,24 @@
 
 
 
+<div class="productos">
+  <article class="producto-item">
 
+    <a href="producto/easy smx x05 pro/index.html">
+      <img src="cards/easy smx x05 pro.webp" alt="Producto">
+    </a>
+    <h3>Easy SMX X05 PRO </h3>
+    <p class="precio">
+      <!-- <span class="precio-antiguo">$65.00</span>
+      <span class="precio-nuevo">$49.00</span> -->
+      <span class="precio-base">$50.00</span>
+    </p>
+    <div class="botones">
+      <button class="btn-stock">No disponible</button>
+      <button class="btn-comprar" onclick="window.location.href='producto/easy smx x05 pro/index.html'">Comprar</button>
+    </div>
+  </article>
+</div>
 
 
 
