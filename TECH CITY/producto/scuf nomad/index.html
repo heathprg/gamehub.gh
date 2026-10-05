@@ -1,0 +1,160 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCUF Nomad - TECH CITY</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+  <meta property="og:title" content="SCUF Nomad - TECH CITY" />
+  <meta property="og:description" content="SCUF Nomad, Gamepad móvil Bluetooth para iPhone, Joysticks Hall Effect anti-drift, Paletas traseras personalizables, Batería de 16 horas, Compatible con iOS 16+. Color: Negro / Blanco" />
+  <meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto%20nomad.jpg" />
+  <meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/scuf%20nomad/index.html" />
+</head>
+<body>
+
+    <header>
+         <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+  <li>
+    <a href="https://www.instagram.com/techcity.cuba/">
+      <img src="../../cards/isnta 2.png" alt="Instagram">
+    </a>
+  </li>
+  <li>
+    <a href="https://wa.me/qr/MKHI67WXDVL7F1">
+      <img src="../../cards/whatsapp.png" alt="WhatsApp">
+    </a>
+  </li>
+  <li>
+    <a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt">
+      <img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp">
+    </a>
+  </li>
+</ul>
+
+        </nav>
+    </header>
+
+   <!-- PRODUCT SECTION -->
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="SCUF Nomad" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+      <img src="producto 2.webp" alt="Vista 2" class="thumb">
+      <img src="producto 3.webp" alt="Vista 3" class="thumb">
+      <img src="producto 4.webp" alt="Vista 4" class="thumb">
+      <img src="producto 5.webp" alt="Vista 4" class="thumb">
+      <img src="producto 6.webp" alt="Vista 4" class="thumb">
+      <img src="producto 7.webp" alt="Vista 4" class="thumb">
+
+
+
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">SCUF Nomad</h2>
+    <p class="product-description">
+      El SCUF Nomad es un gamepad móvil inalámbrico diseñado exclusivamente para iPhone. Cuenta con joysticks Hall Effect anti-drift, paletas traseras personalizables y una batería de larga duración de hasta 16 horas. Su diseño ergonómico y su conexión Bluetooth ofrecen una experiencia de juego premium sin cables.
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+    </select>
+
+    <p class="price">$60.00 USD</p>
+    <button class="add-to-cart">COMPRAR AHORA</button>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="caracteristicas">Características</button>
+      <button class="tab" data-tab="especificaciones">Especificaciones</button>
+      <button class="tab" data-tab="promociones">Extra</button>
+    </div>
+
+    <div class="tab-content" id="caracteristicas">
+      <ul>
+        <li> Conexión Bluetooth 5.0 inalámbrica: sin cables, mayor comodidad. </li>
+        <li> Joysticks Hall Effect: precisión duradera sin drift. </li>
+        <li> Dos paletas traseras personalizables para acciones rápidas. </li>
+        <li> Batería de hasta 16 horas de autonomía. </li>
+        <li> Diseño ergonómico de tamaño completo para sesiones prolongadas. </li>
+        <li> Compatible con muchas fundas de iPhone sin necesidad de retirarlas. </li>
+        <li> App gratuita de SCUF para personalización y captura de juego. </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="especificaciones" style="display: none;">
+      <ul>
+        <li>Compatibilidad: Exclusivo para iPhone con sistema operativo iOS 16 o superior (no compatible con Android).</li>
+        <li>Conexión: Bluetooth 5.0. </li>
+        <li>Batería: 600mAh, hasta 16 horas de uso. </li>
+        <li>Carga: USB-C (aproximadamente 20 minutos para carga completa). </li>
+        <li>Joysticks: Hall Effect anti-drift con tapas intercambiables. </li>
+        <li>Paletas traseras: 2 personalizables. </li>
+        <li>Dimensiones: 202 x 101 x 51 mm. </li>
+        <li>Peso: 228 g. </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="promociones" style="display: none;">
+      <ul>
+        <li>🛡️ Garantía: 3 meses ✅</li>
+        <li>🎁 Envío gratis: ✅</li>
+        <li>💳 Pago por transferencia disponible: ✅</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+             <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+  const mainImage = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumb');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      mainImage.src = thumb.src;
+    });
+  });
+</script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Quitar clase activa de todos los botones
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Ocultar todos los contenidos
+      contents.forEach(content => content.style.display = 'none');
+
+      // Mostrar el contenido correspondiente
+      const target = tab.getAttribute('data-tab');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
