@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech G PRO X - TECH CITY</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="https://heathprg.github.io/gamehub.gh/TECH%20CITY/favicon.png"> 
+    <meta property="og:title" content="Logitech G PRO X - TECH CITY" />
+    <meta property="og:description" content="Teclado mecánico TKL cableado - Switches GX Blue Clicky intercambiables, LIGHTSYNC RGB, Cable Micro-USB" />
+    <meta property="og:image" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/cards/logitech%20tkl.webp" />
+    <meta property="og:url" content="https://heathprg.github.io/gamehub.gh/TECH%20CITY/producto/logitech%20pro%20x/index.html" />
+</head>
+<body>
+    
+
+    <header>
+         <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../cards/logo tech city big.png" alt=""></a>
+            </div>
+            <ul>
+  <li>
+    <a href="https://www.instagram.com/techcity.cuba/">
+      <img src="../../cards/isnta 2.png" alt="Instagram">
+    </a>
+  </li>
+  <li>
+    <a href="https://wa.me/qr/MKHI67WXDVL7F1">
+      <img src="../../cards/whatsapp.png" alt="WhatsApp">
+    </a>
+  </li>
+  <li>
+    <a href="https://chat.whatsapp.com/Cs2niCskC5A2WHtbV6OVJS?mode=wwt">
+      <img src="../../cards/icono de grupo.png" alt="Grupo WhatsApp">
+    </a>
+  </li>
+</ul>
+
+        </nav>
+    </header>
+
+   <!-- PRODUCT SECTION -->
+<section class="product-container">
+  <div class="product-gallery">
+    <img src="producto.webp" alt="Producto principal" class="main-image" id="mainImage">
+    <div class="thumbnails">
+      <img src="producto.webp" alt="Vista 1" class="thumb">
+      <img src="producto 2.webp" alt="Vista 3" class="thumb">
+      <img src="producto 3.webp" alt="Vista 4" class="thumb">
+      <img src="producto 4.webp" alt="Vista 5" class="thumb">
+      <img src="producto 5.webp" alt="Vista 5" class="thumb">
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2 class="product-title">Logitech G PRO X</h2>
+    <p class="product-description">
+      El Logitech G PRO X es un teclado mecánico diseñado junto a profesionales de los esports. Equipado con switches GX Blue Clicky intercambiables, formato tenkeyless y cable Micro-USB desmontable, ofrece la personalización y respuesta que buscan los jugadores competitivos.
+    </p>
+
+    <label for="color-select">Color:</label>
+    <select id="color-select">
+      <option>Negro</option>
+    </select>
+
+    <p class="price">$99.99 USD</p>
+     <!-- <p><span class="discount-tag">-33% OFF</span>
+       <span class="price">$60</span>
+        </p>
+        <p><span>Precio base: <span class="price-old">$90</span></span></p> -->
+    <button class="add-to-cart">COMPRAR AHORA</button>
+    <script>
+  const phone = "56135231"; 
+  const productTitle = document.title; 
+  const message = `Hola, me interesa el siguiente producto: ${productTitle}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  
+  document.querySelector(".add-to-cart").addEventListener("click", function() {
+    window.open(url, "_blank"); 
+  });
+</script>
+
+    <div class="tabs">
+  <button class="tab active" data-tab="caracteristicas">Características</button>
+  <button class="tab" data-tab="especificaciones">Especificaciones</button>
+  <button class="tab" data-tab="promociones">Extra</button>
+</div>
+
+<div class="tab-content" id="caracteristicas">
+  <ul>
+    <li> Switches GX Blue Clicky intercambiables: Retroalimentación táctil y sonora clara, ideal para quienes prefieren sentir y escuchar cada pulsación.</li>
+    <li> Diseño competitivo y compacto: Formato tenkeyless (TKL) para ahorrar espacio y mejorar la posición del mouse.</li>
+    <li> LIGHTSYNC RGB: Iluminación RGB personalizable por tecla, con efectos dinámicos y sincronización con otros dispositivos Logitech G.</li>
+    <li> Teclas PBT de doble inyección: Más resistentes al desgaste y al brillo que las ABS comunes, mantienen su textura con el tiempo.</li>
+    <li> Cable Micro-USB desmontable: Facilita el transporte y permite reemplazarlo fácilmente. Diseño de tres clavijas para conexión segura.</li>
+    <li> Vida útil de los Switches: ~50 millones de pulsaciones.</li>
+    <li> Sistema Anti-ghosting y rollover completo: Asegura que cada pulsación se registre en el juego.</li>
+  </ul>
+</div>
+
+<div class="tab-content" id="especificaciones" style="display: none;">
+  <ul>
+    <li> Tipo de Switches: Mecánicos GX Blue Clicky (táctil + sonoro).</li>
+    <li> Fuerza de Activación: 50 g.</li>
+    <li> Distancia de activación: 2.0 mm.</li>
+    <li> Recorrido total: 3.7 mm.</li>
+    <li> Construcción: Carcasa superior en aleación de aluminio para mayor rigidez.</li>
+    <li> Tipo: Teclado Mecánico TKL.</li>
+    <li> 87 teclas estándar anti-ghosting. 12 teclas F programables.</li>
+    <li> Retroiluminación: LIGHTSYNC RGB por tecla con memoria integrada.</li>
+    <li> Conectividad: Cableado USB (cable Micro-USB desmontable de 1.8 m).</li>
+    <li> Dimensiones: 361 mm x 153 mm x 34 mm.</li>
+    <li> Compatibilidad: Windows 7 o superior, macOS 10.11 o superior (requiere Logitech G HUB para personalización avanzada).</li>
+  </ul>
+</div>
+
+<div class="tab-content" id="promociones" style="display: none;">
+  <ul>
+    <li>🛡️ Garantía: 6 meses ✅</li>
+    <li>🎁 Envío gratis: ✅</li>
+    <li>💳 Pago por transferencia disponible: ❌ </li>
+    <li>Link de Descarga del software: Logitech G HUB</li>
+  </ul>
+</div>
+
+  </div>
+</section>
+
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECH CITY. Todos los derechos reservados.</p>
+        <ul>
+             <li><a href="consumer/index.html">Derechos del consumidor</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+  const mainImage = document.getElementById('mainImage');
+  const thumbnails = document.querySelectorAll('.thumb');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      mainImage.src = thumb.src;
+    });
+  });
+</script>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Quitar clase activa de todos los botones
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Ocultar todos los contenidos
+      contents.forEach(content => content.style.display = 'none');
+
+      // Mostrar el contenido correspondiente
+      const target = tab.getAttribute('data-tab');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
