@@ -70,29 +70,12 @@
     <a href="producto/gamesir g7 pro aimlabs xbx/index.html">
       <img class="fondo-movil" src="cards/nuevo lanzamiento g7 pro cell.webp" alt="Fondo ">
     </a>
-    <!-- <a href="producto/evga x12/index.html">
-      <img class="fondo-movil" src="cards/nuevo lanzamiento evga x12 cell.webp" alt="Fondo">
-    </a>
-
-     <a href="teclado.html#go-to">
-      <img class="fondo-movil" src="cards/nuevo lanzamiento esasy smx d10 cell.webp" alt="Fondo"> -->
-    <!-- </a> -->
-
-    <!-- <script>
-  const carruselInnerMovil = document.querySelector(".carrusel-inner-movil");
-  const slidesMovil = document.querySelectorAll(".carrusel-inner-movil a");
-  let indexMovil = 0;
-
-  setInterval(() => {
-    indexMovil = (indexMovil + 1) % slidesMovil.length;
-    carruselInnerMovil.style.transform = `translateX(-${indexMovil * 100}%)`;
-  }, 3000); // cambia cada 5 segundos
-</script> -->
+    
 
   </div>
 </section>
 
-            <section class="productos-section">
+            <section class="productos-section" id="seccion-productos">
               <!-- <div class="new-meta">
   <h2 class="boton-texto">NEW META</h2>
 </div>   -->
@@ -108,12 +91,12 @@
     <!-- El botón con la clase "active" es el que se ve rojo -->
      
     <a href="#" class="category-pill active">Mando Pro</a>
-    <a href="#" class="category-pill">Todos los productos</a>
-    <a href="#" class="category-pill">Mouse Gamer</a>
-    <a href="#" class="category-pill">Audífonos Gamers</a>
-    <a href="#" class="category-pill">Teclado Gamer</a>
-    <a href="#" class="category-pill">Accesorios</a>
-    <a href="#" class="category-pill">Componentes</a>
+    <a href="index.html#seccion-productos" class="category-pill">Todos los productos</a>
+    <a href="auriculares.html#seccion-productos" class="category-pill">Audífonos Gamers</a>
+    <a href="mouse.html#seccion-productos" class="category-pill">Mouse Gamer</a>
+    <a href="teclado.html#seccion-productos" class="category-pill">Teclado Gamer</a>
+    <a href="acce.html#seccion-productos" class="category-pill">Accesorios</a>
+    <a href="comp.html#seccion-productos" class="category-pill">Componentes</a>
   </div>
 
   <!-- Botón Derecha -->
@@ -545,10 +528,9 @@
   const scrollContainer = document.getElementById('categoryScroll');
   const btnPrev = document.querySelector('.nav-arrow.prev');
   const btnNext = document.querySelector('.nav-arrow.next');
+  const scrollAmount = 300; 
 
-  // Función para desplazar
-  const scrollAmount = 300; // Píxeles que se mueve al hacer clic
-
+  // Flechas de navegación
   btnNext.addEventListener('click', () => {
     scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   });
@@ -557,11 +539,12 @@
     scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 
-  // Lógica opcional: Cambiar la clase 'active' al hacer clic en una categoría
+  // Lógica de los botones (Pills)
   const pills = document.querySelectorAll('.category-pill');
+  
   pills.forEach(pill => {
     pill.addEventListener('click', function(e) {
-      e.preventDefault(); // Evita que el enlace recargue la página (quita esto si usas links reales)
+      // --- YA NO HAY e.preventDefault() AQUÍ ---
       
       // Quitar 'active' de todos
       pills.forEach(p => p.classList.remove('active'));
@@ -569,11 +552,12 @@
       // Poner 'active' al clickeado
       this.classList.add('active');
       
-      // Aquí podrías agregar lógica para filtrar tus productos
-      console.log('Filtrar por: ' + this.innerText);
+      // NOTA: Al no haber preventDefault, el navegador 
+      // irá a index.html, mando.html, etc. automáticamente.
     });
   });
 </script>
+
 
 
 </body>
