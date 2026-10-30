@@ -123,11 +123,33 @@
             
 
             <section class="productos-section">
-              <div class="new-meta">
+              <!-- <div class="new-meta">
   <h2 class="boton-texto">NEW META</h2>
-</div>  
+</div>   -->
   
+<div class="category-slider-container">
+  <!-- Botón Izquierda -->
+  <button class="nav-arrow prev" aria-label="Anterior">
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
 
+  <!-- Lista de Categorías -->
+  <div class="category-scroll" id="categoryScroll">
+    <!-- El botón con la clase "active" es el que se ve rojo -->
+    <a href="#" class="category-pill active">Todos los productos</a>
+    <a href="mouse.html" class="category-pill">Mouse Gamer</a>
+    <a href="mando.html" class="category-pill">Mando Pro</a>
+    <a href="auriculares.html" class="category-pill">Audífonos Gamers</a>
+    <a href="teclado.html" class="category-pill">Teclado Gamer</a>
+    <a href="#" class="category-pill">Accesorios</a>
+    <a href="#" class="category-pill">Componentes</a>
+  </div>
+
+  <!-- Botón Derecha -->
+  <button class="nav-arrow next" aria-label="Siguiente">
+    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+</div>
 
   <div class="grid-productos">
 
@@ -1800,6 +1822,40 @@
     }, { threshold: 0.2 });
 
     lanzamientos.forEach((lanzamiento) => observer.observe(lanzamiento));
+  });
+</script>
+
+<script>
+  const scrollContainer = document.getElementById('categoryScroll');
+  const btnPrev = document.querySelector('.nav-arrow.prev');
+  const btnNext = document.querySelector('.nav-arrow.next');
+  const scrollAmount = 300; 
+
+  // Flechas de navegación
+  btnNext.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+  btnPrev.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  // Lógica de los botones (Pills)
+  const pills = document.querySelectorAll('.category-pill');
+  
+  pills.forEach(pill => {
+    pill.addEventListener('click', function(e) {
+      // --- YA NO HAY e.preventDefault() AQUÍ ---
+      
+      // Quitar 'active' de todos
+      pills.forEach(p => p.classList.remove('active'));
+      
+      // Poner 'active' al clickeado
+      this.classList.add('active');
+      
+      // NOTA: Al no haber preventDefault, el navegador 
+      // irá a index.html, mando.html, etc. automáticamente.
+    });
   });
 </script>
 
