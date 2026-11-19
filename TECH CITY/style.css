@@ -558,7 +558,12 @@ header img {
 
 .producto-item .tag { 
   position: absolute; top: 10px; left: 10px; 
-  background: #e63946;  color: #fff; 
+   background: linear-gradient(110deg, #7928CA 0%, #C026D3 45%, #FF1744 100%);
+    color: #fff;
+    box-shadow:
+        0 0 8px rgba(192, 38, 211, 0.5),
+        0 0 18px rgba(255, 23, 68, 0.3);
+    border: 1px solid rgba(255,255,255,0.25);
   font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-transform: uppercase; 
 }
 
